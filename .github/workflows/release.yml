@@ -21,7 +21,7 @@ jobs:
     uses: RawZ06-Studio/.github/.github/workflows/docker-build-push.yml@main
     with:
       image_name: tracker-online
-      dokploy_app_id: wwDBWzd4QNn2u4UKJF3Ul
+      dokploy_app_id: Hf_pYEjZ17XZPpRh0fgAX
     secrets:
       NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
       NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
