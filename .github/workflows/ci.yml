@@ -1,28 +1,15 @@
-name: Release
+name: CI
 
 on:
   push:
-    branches:
+    branches-ignore:
+      - main
       - develop
+  pull_request:
 
 jobs:
-  release:
-    uses: RawZ06-Studio/.github/.github/workflows/node-ci-preprod.yml@main
-    permissions:
-      contents: write
-    with:
-      publishable: false       # application, pas de publish npm
+  ci:
+    uses: RawZ06-Studio/.github/.github/workflows/node-ci.yml@main
     secrets:
       NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
       NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-
-  docker:
-    needs: release
-    uses: RawZ06-Studio/.github/.github/workflows/docker-build-push.yml@main
-    with:
-      image_name: rslwebsite-preprod
-      dokploy_app_id: GU04XWmOgLE2yp0G4QajH
-    secrets:
-      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
-      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-      DOKPLOY_TOKEN: ${{ secrets.DOKPLOY_TOKEN }}
