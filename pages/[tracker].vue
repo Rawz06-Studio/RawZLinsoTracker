@@ -27,51 +27,35 @@ useListenKey(true, true, 'l', () => isOpen.value = true)
 </script>
 
 <template>
-  <div v-if="!isSmallWindow" class="mb-2 ml-2">
-    <UButton
-label="Go Live" icon="i-heroicons-globe-alt"
-             size="sm"
-             color="primary"
-             :trailing="false" @click="isOpen = true"/>
-  </div>
-  <Tracker :tracker="tracker" :is-small-window="isSmallWindow" />
-  <UModal v-model="isOpen">
-    <UCard
-        :ui="{
-          base: 'h-full flex flex-col',
-          rounded: '',
-          divide: 'divide-y divide-gray-100 dark:divide-gray-800',
-          body: {
-            base: 'grow'
-          }
-        }"
-    >
-      <template #header>
-        <div class="flex items-center justify-between">
-          <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-            Go Live
-          </h3>
-          <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isOpen = false" />
-        </div>
-      </template>
-
-      <div>
+  <div>
+    <div v-if="!isSmallWindow" class="mb-2 ml-2">
+      <UButton
+        label="Go Live" icon="i-heroicons-globe-alt"
+        size="sm"
+        color="primary"
+        @click="isOpen = true"
+      />
+    </div>
+    <Tracker :tracker="tracker" :is-small-window="isSmallWindow" />
+    <UModal v-model:open="isOpen" title="Go Live">
+      <template #body>
         <UForm :state="form" class="space-y-4" @submit="onSubmit">
-          <UFormGroup label="Name" name="name">
+          <UFormField label="Name" name="name">
             <UInput v-model="form.name" />
-          </UFormGroup>
+          </UFormField>
 
           <UButton
-icon="i-heroicons-globe-alt"
-                   size="sm"
-                   color="primary"
-                   :trailing="false" type="submit">
+            icon="i-heroicons-globe-alt"
+            size="sm"
+            color="primary"
+            type="submit"
+          >
             Go
           </UButton>
         </UForm>
-      </div>
-    </UCard>
-  </UModal>
+      </template>
+    </UModal>
+  </div>
 </template>
 
 <style scoped>

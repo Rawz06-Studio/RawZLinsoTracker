@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "rawz-linso-tracker",
   "private": true,
   "type": "module",
   "scripts": {
@@ -20,8 +20,7 @@
     "@nuxt/ui": "^4.7.1",
     "@nuxtjs/color-mode": "^4.0.0",
     "@pinia/nuxt": "^0.11.3",
-    "@vite-pwa/nuxt": "^1.1.1",
-    "nuxt": "^4.4.4",
+    "nuxt": "^4.4.2",
     "pinia": "^3.0.4",
     "socket.io": "^4.8.3",
     "socket.io-client": "^4.8.3",
@@ -35,13 +34,5 @@
     "prettier": "^3.8.3",
     "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "@parcel/watcher",
-      "unrs-resolver",
-      "vue-demi"
-    ]
-  }
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8"
 }

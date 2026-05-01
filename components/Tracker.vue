@@ -73,75 +73,50 @@ useHiddenScrollBarOnSmallWindow(props.isSmallWindow)
 <!--    // global: stateStore.getState(),-->
 <!--    state: stateStore.trackerState-->
 <!--  }, null, 4)}}</pre>-->
-  <UModal v-model="isOpen">
-    <UCard
-        :ui="{
-          base: 'h-full flex flex-col',
-          rounded: '',
-          divide: 'divide-y divide-gray-100 dark:divide-gray-800',
-          body: {
-            base: 'grow'
-          }
-        }"
-    >
-      <template #header>
-        <div class="flex items-center justify-between">
-          <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-            Are you sure you want to reset this tracker?
-          </h3>
-          <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isOpen = false" />
-        </div>
-      </template>
-
+  <UModal v-model:open="isOpen" title="Are you sure you want to reset this tracker?">
+    <template #body>
       <div class="flex justify-end gap-4">
         <UButton
-label="No" icon="i-heroicons-x-mark"
-                 size="sm"
-                 color="primary"
-                 variant="outline"
-                 :trailing="false" @click="isOpen = false"/>
+          label="No"
+          icon="i-heroicons-x-mark"
+          size="sm"
+          color="primary"
+          variant="outline"
+          @click="isOpen = false"
+        />
         <UButton
-label="Yes" icon="i-heroicons-check"
-                 size="sm"
-                 color="red"
-                 :trailing="false" @click="reset()"/>
+          label="Yes"
+          icon="i-heroicons-check"
+          size="sm"
+          color="error"
+          @click="reset()"
+        />
       </div>
-    </UCard>
+    </template>
   </UModal>
 
-  <UModal v-model="isErrorOpen">
-    <UCard
-        :ui="{
-          base: 'h-full flex flex-col',
-          rounded: '',
-          divide: 'divide-y divide-gray-100 dark:divide-gray-800',
-          body: {
-            base: 'grow'
-          }
-        }"
-    >
-      <template #header>
-        <div class="flex items-center justify-between">
-          <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-            <span v-if="errorArgs === 'error'">
-              The limit of available tracker online has been reached.
-            </span>
-            <span v-if="errorArgs === 'name'">
-              The tracker with id {{props.id}} is not tracker {{props.tracker}}. Please connect with correct tracker
-            </span>
-          </h3>
-        </div>
-      </template>
+  <UModal v-model:open="isErrorOpen">
+    <template #title>
+      <span v-if="errorArgs === 'error'">
+        The limit of available tracker online has been reached.
+      </span>
+      <span v-if="errorArgs === 'name'">
+        The tracker with id {{ props.id }} is not tracker {{ props.tracker }}. Please connect with correct tracker
+      </span>
+    </template>
 
+    <template #footer>
       <div class="flex justify-end gap-4">
         <UButton
-label="Close and back to offline" icon="i-fa6-solid-arrow-rotate-left"
-                 size="sm"
-                 color="primary"
-                 variant="outline"
-                 :trailing="false" @click="goBackOffline()"/>
+          label="Close and back to offline"
+          icon="i-fa6-solid-arrow-rotate-left"
+          size="sm"
+          color="primary"
+          variant="outline"
+          @click="goBackOffline()"
+        />
       </div>
-    </UCard>
+    </template>
   </UModal>
 </template>
 
