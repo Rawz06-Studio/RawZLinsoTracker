@@ -1,42 +1,44 @@
 <script setup>
-import Tracker from "~/components/Tracker.vue";
-import {useListenKey} from "~/hooks/useListenKey.js";
-const route = useRoute()
-const tracker = route.params.tracker
-const isOpen = ref(false)
+import AppTracker from "~/components/AppTracker.vue";
+import { useListenKey } from "~/hooks/useListenKey.js";
+const route = useRoute();
+const tracker = route.params.tracker;
+const isOpen = ref(false);
 const form = reactive({
-  name: ""
-})
+  name: "",
+});
 
-const isSmallWindow = route.query.isSmallWindow
+const isSmallWindow = route.query.isSmallWindow;
 
 async function onSubmit(event) {
   // Do something with event.data
-  event.preventDefault()
+  event.preventDefault();
   const value = event.data.name;
   form.name = "";
-  await navigateTo(`${useRequestURL().origin}/tracker/${tracker}/${value}`, {external: true})
+  await navigateTo(`${useRequestURL().origin}/tracker/${tracker}/${value}`, {
+    external: true,
+  });
 }
 
 useHead({
   title: `Tracker ${tracker}`,
-})
+});
 
-useListenKey(true, true, 'l', () => isOpen.value = true)
-
+useListenKey(true, true, "l", () => (isOpen.value = true));
 </script>
 
 <template>
   <div>
     <div v-if="!isSmallWindow" class="mb-2 ml-2">
       <UButton
-        label="Go Live" icon="i-heroicons-globe-alt"
+        label="Go Live"
+        icon="i-heroicons-globe-alt"
         size="sm"
         color="primary"
         @click="isOpen = true"
       />
     </div>
-    <Tracker :tracker="tracker" :is-small-window="isSmallWindow" />
+    <AppTracker :tracker="tracker" :is-small-window="isSmallWindow" />
     <UModal v-model:open="isOpen" title="Go Live">
       <template #body>
         <UForm :state="form" class="space-y-4" @submit="onSubmit">
@@ -58,6 +60,4 @@ useListenKey(true, true, 'l', () => isOpen.value = true)
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,55 +1,51 @@
 import { defineStore } from "pinia";
 
 export const useTrackerStateStore = defineStore("default-state", {
-    state: () => ({
-        trackerState: {
+  state: () => ({
+    trackerState: {},
+    trackerInfo: {},
+    subscription: null,
+    name: null,
+  }),
+  actions: {
+    init(item, current) {
+      if (!this.trackerState[item]) {
+        this.update(item, current);
+      }
+    },
 
-        },
-        trackerInfo: {
+    update(item, current) {
+      this.trackerState[item] = current;
 
-        },
-        subscription: null,
-        name: null,
-    }),
-    actions: {
-        init(item, current) {
-            if(!this.trackerState[item]) {
-                this.update(item, current);
-            }
-        },
+      if (this.subscription) {
+        this.subscription(this.trackerState);
+      }
+    },
 
-        update(item, current) {
-            this.trackerState[item] = current
+    get(item) {
+      return this.trackerState[item];
+    },
 
-            if(this.subscription) {
-                this.subscription(this.trackerState)
-            }
-        },
+    setName(name) {
+      this.name = name;
+    },
 
-        get(item) {
-            return this.trackerState[item];
-        },
+    subscribe(callback) {
+      this.subscription = callback;
+    },
 
-        setName(name) {
-            this.name = name
-        },
+    unsubscribe() {
+      this.subscription = null;
+    },
 
-        subscribe(callback) {
-            this.subscription = callback
-        },
-
-        unsubscribe() {
-            this.subscription = null
-        },
-
-        getState() {
-            return Object.keys(this.trackerInfo).reduce((acc, key) => {
-                acc[key] = {
-                    ...this.trackerInfo[key],
-                    state: this.trackerState[key],
-                };
-                return acc;
-            }, {});
-        }
-    }
+    getState() {
+      return Object.keys(this.trackerInfo).reduce((acc, key) => {
+        acc[key] = {
+          ...this.trackerInfo[key],
+          state: this.trackerState[key],
+        };
+        return acc;
+      }, {});
+    },
+  },
 });

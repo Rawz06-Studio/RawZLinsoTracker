@@ -1,2877 +1,2862 @@
 [
-    {
-        "Informations": {
-            "Creator": "LinSoraK",
-            "Name": "Ocarina Of Time - 64 Template",
-            "Version": "1.3",
-            "Comments": "Tracker for open tracker concept only"
-        }
-    },
-    {
-        "Datas": {
-            "Dimensions": {
-                "width": 335,
-                "height": 433
-            },
-            "Background": "backgroundOOT64.png",
-            "BackgroundColor": {
-                "r": 0,
-                "g": 0,
-                "b": 0
-            },
-            "Items": {
-                "Normal": {
-                    "ItemsSheet": "itemsOOT64.png",
-                    "ItemsSheetDimensions": {
-                        "width": 35,
-                        "height": 35
-                    }
-                }
-            }
-        }
-    },
-    {
-        "Fonts": {
-            "incrementalItemFont": {
-                "Name": "visitor1.ttf",
-                "Size": 18,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 0
-                    }
-                }
-            },
-            "evolutionItemFont": {
-                "Name": "visitor1.ttf",
-                "Size": 18,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 0
-                    }
-                }
-            },
-            "countItemFont": {
-                "Name": "visitor1.ttf",
-                "Size": 18,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 0
-                    }
-                }
-            },
-            "labelItemFont": {
-                "Name": "cmd.woff",
-                "Size": 13,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 255
-                    }
-                }
-            },
-            "hintFont": {
-                "Name": "lm.ttf",
-                "Size": 11,
-                "Colors": {
-                    "Normal": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 255
-                    }
-                }
-            }
-        }
-    },
-    {
-        "Items": [
-            {
-                "Id": 0,
-                "Kind": "IncrementalItem",
-                "Name": "Deku Stick",
-                "Positions": {
-                    "x": 28,
-                    "y": 28
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 1,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Increment": [
-                    "20",
-                    "30"
-                ]
-            },
-            {
-                "Id": 1,
-                "Kind": "IncrementalItem",
-                "Name": "Deku Nut",
-                "Positions": {
-                    "x": 69,
-                    "y": 28
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 2,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Increment": [
-                    "30",
-                    "40"
-                ]
-            },
-            {
-                "Id": 2,
-                "Kind": "IncrementalItem",
-                "Name": "Bomb",
-                "Positions": {
-                    "x": 110,
-                    "y": 28
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 3,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Increment": [
-                    "30",
-                    "40"
-                ]
-            },
-            {
-                "Id": 3,
-                "Kind": "IncrementalItem",
-                "Name": "Fairy Bow",
-                "Positions": {
-                    "x": 151,
-                    "y": 28
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Increment": [
-                    "40",
-                    "50"
-                ]
-            },
-            {
-                "Id": 4,
-                "Kind": "Item",
-                "Name": "Fire Arrow",
-                "Positions": {
-                    "x": 192,
-                    "y": 28
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 5,
-                "Kind": "Item",
-                "Name": "Din Fire",
-                "Positions": {
-                    "x": 234,
-                    "y": 28
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 6,
-                "Kind": "IncrementalItem",
-                "Name": "Fairy Slingshot",
-                "Positions": {
-                    "x": 28,
-                    "y": 68
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 7,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Increment": [
-                    "40",
-                    "50"
-                ]
-            },
-            {
-                "Id": 7,
-                "Kind": "EvolutionItem",
-                "Name": "Fairy Ocarina",
-                "Positions": {
-                    "x": 69,
-                    "y": 68
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 8,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Ocarina of Time",
-                        "SheetInformation": {
-                            "row": 1,
-                            "column": 9,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 8,
-                "Kind": "Item",
-                "Name": "Bombchu",
-                "Positions": {
-                    "x": 110,
-                    "y": 68
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 10,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 9,
-                "Kind": "EvolutionItem",
-                "Name": "Hookshot",
-                "Positions": {
-                    "x": 151,
-                    "y": 68
-                },
-                "SheetInformation": {
-                    "row": 1,
-                    "column": 11,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "H",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Longshot",
-                        "SheetInformation": {
-                            "row": 1,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "L"
-                    }
-                ]
-            },
-            {
-                "Id": 10,
-                "Kind": "Item",
-                "Name": "Ice Arrow",
-                "Positions": {
-                    "x": 193,
-                    "y": 68
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 1,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 11,
-                "Kind": "Item",
-                "Name": "Farore Wind",
-                "Positions": {
-                    "x": 234,
-                    "y": 68
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 2,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 12,
-                "Kind": "Item",
-                "Name": "Boomerang",
-                "Positions": {
-                    "x": 28,
-                    "y": 108
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 3,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 13,
-                "Kind": "Item",
-                "Name": "Lens of Truth",
-                "Positions": {
-                    "x": 69,
-                    "y": 108
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 14,
-                "Kind": "Item",
-                "Name": "Magic Bean",
-                "Positions": {
-                    "x": 110,
-                    "y": 108
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 15,
-                "Kind": "Item",
-                "Name": "Megaton Hammer",
-                "Positions": {
-                    "x": 151,
-                    "y": 108
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 16,
-                "Kind": "Item",
-                "Name": "Light Arrow",
-                "Positions": {
-                    "x": 193,
-                    "y": 108
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 7,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 17,
-                "Kind": "Item",
-                "Name": "Nayru Love",
-                "Positions": {
-                    "x": 234,
-                    "y": 108
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 8,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 18,
-                "Kind": "EvolutionItem",
-                "Name": "Empty Bottle",
-                "Positions": {
-                    "x": 28,
-                    "y": 148
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Red Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 10,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Green Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 11,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Blue Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Fairy",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 1,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Fish",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 2,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 3,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "Half Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 8,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 7,
-                        "Name": "Ruto Letter",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 4,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 8,
-                        "Name": "Blue Fire",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 9,
-                        "Name": "Bugs",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 6,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 10,
-                        "Name": "Big Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 7,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 11,
-                        "Name": "Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 9,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 19,
-                "Kind": "EvolutionItem",
-                "Name": "Empty Bottle",
-                "Positions": {
-                    "x": 69,
-                    "y": 148
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Red Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 10,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Green Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 11,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Blue Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Fairy",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 1,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Fish",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 2,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 3,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "Half Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 8,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 7,
-                        "Name": "Ruto Letter",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 4,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 8,
-                        "Name": "Blue Fire",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 9,
-                        "Name": "Bugs",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 6,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 10,
-                        "Name": "Big Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 7,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 11,
-                        "Name": "Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 9,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 20,
-                "Kind": "EvolutionItem",
-                "Name": "Empty Bottle",
-                "Positions": {
-                    "x": 110,
-                    "y": 148
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Red Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 10,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Green Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 11,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Blue Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Fairy",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 1,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Fish",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 2,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 3,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "Half Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 8,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 7,
-                        "Name": "Ruto Letter",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 4,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 8,
-                        "Name": "Blue Fire",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 9,
-                        "Name": "Bugs",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 6,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 10,
-                        "Name": "Big Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 7,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 11,
-                        "Name": "Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 9,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 21,
-                "Kind": "EvolutionItem",
-                "Name": "Empty Bottle",
-                "Positions": {
-                    "x": 151,
-                    "y": 148
-                },
-                "SheetInformation": {
-                    "row": 2,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Red Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 10,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Green Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 11,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Blue Potion",
-                        "SheetInformation": {
-                            "row": 2,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Fairy",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 1,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Fish",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 2,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 3,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "Half Milk",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 8,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 7,
-                        "Name": "Ruto Letter",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 4,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 8,
-                        "Name": "Blue Fire",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 9,
-                        "Name": "Bugs",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 6,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 10,
-                        "Name": "Big Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 7,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 11,
-                        "Name": "Poe",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 9,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 22,
-                "Kind": "EvolutionItem",
-                "Name": "Egg",
-                "Positions": {
-                    "x": 192,
-                    "y": 148
-                },
-                "SheetInformation": {
-                    "row": 4,
-                    "column": 10,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Cucco",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 11,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Cojiro",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Odd Mushroom",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 1,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Odd Potion",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 2,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Poacher Saw",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 3,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "Broken Goron Sword",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 4,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "Prescription",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 7,
-                        "Name": "Eyeball Frog",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 6,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 8,
-                        "Name": "World Finest Eye Drops",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 7,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 9,
-                        "Name": "Claim Check",
-                        "SheetInformation": {
-                            "row": 5,
-                            "column": 8,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 23,
-                "Kind": "EvolutionItem",
-                "Name": "Egg",
-                "Positions": {
-                    "x": 234,
-                    "y": 148
-                },
-                "SheetInformation": {
-                    "row": 3,
-                    "column": 10,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Cucco",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 11,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Zelda Letter",
-                        "SheetInformation": {
-                            "row": 3,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Keaton Mask",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 1,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Skull Mask",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 2,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Spooky Mask",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 3,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "Bunny Hood",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 4,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "Goron Mask",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 7,
-                        "Name": "Zora Mask",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 6,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 8,
-                        "Name": "Gerudo Mask",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 7,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 9,
-                        "Name": "Mask of Truth",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 8,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 10,
-                        "Name": "None",
-                        "SheetInformation": {
-                            "row": 4,
-                            "column": 9,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 24,
-                "Kind": "Item",
-                "Name": "Kokiri Sword",
-                "Positions": {
-                    "x": 28,
-                    "y": 196
-                },
-                "SheetInformation": {
-                    "row": 5,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 25,
-                "Kind": "Item",
-                "Name": "Master Sword",
-                "Positions": {
-                    "x": 69,
-                    "y": 196
-                },
-                "SheetInformation": {
-                    "row": 5,
-                    "column": 10,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 26,
-                "Kind": "Item",
-                "Name": "Biggoron Sword",
-                "Positions": {
-                    "x": 110,
-                    "y": 196
-                },
-                "SheetInformation": {
-                    "row": 5,
-                    "column": 11,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 27,
-                "Kind": "Item",
-                "Name": "Deku Shield",
-                "Positions": {
-                    "x": 28,
-                    "y": 236
-                },
-                "SheetInformation": {
-                    "row": 5,
-                    "column": 12,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 28,
-                "Kind": "Item",
-                "Name": "Hylian Shield",
-                "Positions": {
-                    "x": 69,
-                    "y": 236
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 1,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 29,
-                "Kind": "Item",
-                "Name": "Mirror Shield",
-                "Positions": {
-                    "x": 110,
-                    "y": 236
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 2,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 30,
-                "Kind": "Item",
-                "Name": "Kokiri Tunic",
-                "Positions": {
-                    "x": 28,
-                    "y": 276
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 3,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": true,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 31,
-                "Kind": "Item",
-                "Name": "Goron Tunic",
-                "Positions": {
-                    "x": 69,
-                    "y": 276
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 32,
-                "Kind": "Item",
-                "Name": "Zora Tunic",
-                "Positions": {
-                    "x": 110,
-                    "y": 276
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 33,
-                "Kind": "Item",
-                "Name": "Kokiri Boots",
-                "Positions": {
-                    "x": 28,
-                    "y": 318
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": true,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 34,
-                "Kind": "Item",
-                "Name": "Iron Boots",
-                "Positions": {
-                    "x": 69,
-                    "y": 318
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 7,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 35,
-                "Kind": "Item",
-                "Name": "Hover Boots",
-                "Positions": {
-                    "x": 110,
-                    "y": 318
-                },
-                "SheetInformation": {
-                    "row": 6,
-                    "column": 8,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 36,
-                "Kind": "CountItem",
-                "Name": "Skulls",
-                "Positions": {
-                    "x": 193,
-                    "y": 196
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 2,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": true,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "valueMin": 0,
-                "valueMax": 100,
-                "valueIncrease": 1,
-                "valueStart": 0
-            },
-            {
-                "Id": 37,
-                "Kind": "LabelItem",
-                "Name": "Kokiri Emerald",
-                "Positions": {
-                    "x": 151,
-                    "y": 318
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 38,
-                "Kind": "LabelItem",
-                "Name": "Goron Ruby",
-                "Positions": {
-                    "x": 193,
-                    "y": 318
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 39,
-                "Kind": "LabelItem",
-                "Name": "Zora Sapphire",
-                "Positions": {
-                    "x": 234,
-                    "y": 318
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 7,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 40,
-                "Kind": "EvolutionItem",
-                "Name": "Magic I",
-                "Positions": {
-                    "x": 151,
-                    "y": 236
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 3,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Magic II",
-                        "SheetInformation": {
-                            "row": 8,
-                            "column": 4,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 41,
-                "Kind": "Item",
-                "Name": "Stone of Agony",
-                "Positions": {
-                    "x": 151,
-                    "y": 276
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 2,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 42,
-                "Kind": "EvolutionItem",
-                "Name": "Silver Scale",
-                "Positions": {
-                    "x": 193,
-                    "y": 276
-                },
-                "SheetInformation": {
-                    "row": 7,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Golden Scale",
-                        "SheetInformation": {
-                            "row": 7,
-                            "column": 10,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 43,
-                "Kind": "EvolutionItem",
-                "Name": "Goron Bracelet",
-                "Positions": {
-                    "x": 234,
-                    "y": 276
-                },
-                "SheetInformation": {
-                    "row": 7,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": null,
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Silver Gauntlets",
-                        "SheetInformation": {
-                            "row": 7,
-                            "column": 7,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Golden Gauntlets",
-                        "SheetInformation": {
-                            "row": 7,
-                            "column": 8,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": null
-                    }
-                ]
-            },
-            {
-                "Id": 44,
-                "Kind": "EvolutionItem",
-                "Name": "Rupee Upgrade I",
-                "Positions": {
-                    "x": 193,
-                    "y": 236
-                },
-                "SheetInformation": {
-                    "row": 7,
-                    "column": 11,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "200",
-                "LabelCenter": true,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Rupee Upgrade II",
-                        "SheetInformation": {
-                            "row": 7,
-                            "column": 11,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "500"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Rupee Upgrade III",
-                        "SheetInformation": {
-                            "row": 7,
-                            "column": 12,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "999"
-                    }
-                ]
-            },
-            {
-                "Id": 45,
-                "Kind": "Item",
-                "Name": "Gerudo Card",
-                "Positions": {
-                    "x": 234,
-                    "y": 236
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 1,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 46,
-                "Kind": "LabelItem",
-                "Name": "Forest Medallion",
-                "Positions": {
-                    "x": 28,
-                    "y": 365
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 8,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 47,
-                "Kind": "LabelItem",
-                "Name": "Fire Medallion",
-                "Positions": {
-                    "x": 69,
-                    "y": 365
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 48,
-                "Kind": "LabelItem",
-                "Name": "Water Medallion",
-                "Positions": {
-                    "x": 110,
-                    "y": 365
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 10,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 49,
-                "Kind": "LabelItem",
-                "Name": "Shadow Medallion",
-                "Positions": {
-                    "x": 151,
-                    "y": 365
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 11,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 50,
-                "Kind": "LabelItem",
-                "Name": "Spirit Medallion",
-                "Positions": {
-                    "x": 193,
-                    "y": 365
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 12,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 51,
-                "Kind": "LabelItem",
-                "Name": "Light Medallion",
-                "Positions": {
-                    "x": 234,
-                    "y": 365
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 1,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "MQ",
-                "OpacityDisable": 0.5,
-                "LabelList": [
-                    "????",
-                    "FREE",
-                    "DEKU",
-                    "DC",
-                    "JABU",
-                    "FOREST",
-                    "FIRE",
-                    "WATER",
-                    "SHADOW",
-                    "SPIRIT"
-                ]
-            },
-            {
-                "Id": 52,
-                "Kind": "CheckItem",
-                "Name": "Zelda Lullaby",
-                "Positions": {
-                    "x": 279,
-                    "y": 23
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 2,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 53,
-                "Kind": "CheckItem",
-                "Name": "Epona Song",
-                "Positions": {
-                    "x": 279,
-                    "y": 58
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 3,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 54,
-                "Kind": "CheckItem",
-                "Name": "Saria Song",
-                "Positions": {
-                    "x": 279,
-                    "y": 93
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 55,
-                "Kind": "CheckItem",
-                "Name": "Sun Song",
-                "Positions": {
-                    "x": 279,
-                    "y": 125
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 56,
-                "Kind": "CheckItem",
-                "Name": "Song of Time",
-                "Positions": {
-                    "x": 279,
-                    "y": 157
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 57,
-                "Kind": "CheckItem",
-                "Name": "Song of Storms",
-                "Positions": {
-                    "x": 279,
-                    "y": 189
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 7,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 58,
-                "Kind": "CheckItem",
-                "Name": "Minuet of Forest",
-                "Positions": {
-                    "x": 278,
-                    "y": 219
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 8,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 59,
-                "Kind": "CheckItem",
-                "Name": "Bolero of Fire",
-                "Positions": {
-                    "x": 278,
-                    "y": 250
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 9,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 60,
-                "Kind": "CheckItem",
-                "Name": "Serenade of Water",
-                "Positions": {
-                    "x": 278,
-                    "y": 281
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 10,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 61,
-                "Kind": "CheckItem",
-                "Name": "Requiem of Spirit",
-                "Positions": {
-                    "x": 278,
-                    "y": 312
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 11,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 62,
-                "Kind": "CheckItem",
-                "Name": "Nocturne of Shadow",
-                "Positions": {
-                    "x": 278,
-                    "y": 343
-                },
-                "SheetInformation": {
-                    "row": 9,
-                    "column": 12,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 63,
-                "Kind": "CheckItem",
-                "Name": "Prelude of Light",
-                "Positions": {
-                    "x": 278,
-                    "y": 374
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 1,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "CheckImageSheetInformation": {
-                    "row": 10,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                }
-            },
-            {
-                "Id": 64,
-                "Kind": "GoModeItem",
-                "Name": "Go Mode",
-                "Positions": {
-                    "x": 151,
-                    "y": 196
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 3,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "BackgroundGlow": "light.png"
-            },
-            {
-                "Id": 65,
-                "Kind": "EvolutionItem",
-                "Name": "Forest Key 1",
-                "Positions": {
-                    "x": 28,
-                    "y": 421
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Forest Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Forest Key 3",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "3"
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Forest Key 4",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "4"
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Forest Key 5",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "5"
-                    }
-                ]
-            },
-            {
-                "Id": 66,
-                "Kind": "Item",
-                "Name": "Forest Boss Key",
-                "Positions": {
-                    "x": 70,
-                    "y": 421
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 67,
-                "Kind": "EvolutionItem",
-                "Name": "Fire Key 1",
-                "Positions": {
-                    "x": 28,
-                    "y": 461
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Fire Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Fire Key 3",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "3"
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Fire Key 4",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "4"
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Fire Key 5",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "5"
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Fire Key 6",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "6"
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "Fire Key 7",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "7"
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "Fire Key 8",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "8"
-                    }
-                ]
-            },
-            {
-                "Id": 68,
-                "Kind": "Item",
-                "Name": "Fire Boss Key",
-                "Positions": {
-                    "x": 70,
-                    "y": 461
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 69,
-                "Kind": "EvolutionItem",
-                "Name": "Water Key 1",
-                "Positions": {
-                    "x": 28,
-                    "y": 501
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Water Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Water Key 3",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "3"
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Water Key 4",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "4"
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Water Key 5",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "5"
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "Water Key 6",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "6"
-                    }
-                ]
-            },
-            {
-                "Id": 70,
-                "Kind": "Item",
-                "Name": "Water Boss Key",
-                "Positions": {
-                    "x": 70,
-                    "y": 501
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 71,
-                "Kind": "EvolutionItem",
-                "Name": "Shadow Key 1",
-                "Positions": {
-                    "x": 110,
-                    "y": 421
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Shadow Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Shadow Key 3",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "3"
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Shadow Key 4",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "4"
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Shadow Key 5",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "5"
-                    }
-                ]
-            },
-            {
-                "Id": 72,
-                "Kind": "Item",
-                "Name": "Shadow Boss Key",
-                "Positions": {
-                    "x": 152,
-                    "y": 421
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 73,
-                "Kind": "EvolutionItem",
-                "Name": "Spirit Key 1",
-                "Positions": {
-                    "x": 110,
-                    "y": 461
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Spirit Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "Spirit Key 3",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "3"
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "Spirit Key 4",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "4"
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "Spirit Key 5",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "5"
-                    }
-                ]
-            },
-            {
-                "Id": 74,
-                "Kind": "Item",
-                "Name": "Spirit Boss Key",
-                "Positions": {
-                    "x": 152,
-                    "y": 461
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 75,
-                "Kind": "EvolutionItem",
-                "Name": "Ganon Key 1",
-                "Positions": {
-                    "x": 110,
-                    "y": 501
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "Ganon Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    }
-                ]
-            },
-            {
-                "Id": 76,
-                "Kind": "Item",
-                "Name": "Ganon Boss Key",
-                "Positions": {
-                    "x": 152,
-                    "y": 501
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 6,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5
-            },
-            {
-                "Id": 77,
-                "Kind": "EvolutionItem",
-                "Name": "BOTW Key 1",
-                "Positions": {
-                    "x": 213,
-                    "y": 421
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "BOTW Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "BOTW Key 3",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "3"
-                    }
-                ]
-            },
-            {
-                "Id": 78,
-                "Kind": "EvolutionItem",
-                "Name": "Fortress Key 1",
-                "Positions": {
-                    "x": 213,
-                    "y": 461
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": []
-            },
-            {
-                "Id": 79,
-                "Kind": "EvolutionItem",
-                "Name": "GTG Key 1",
-                "Positions": {
-                    "x": 213,
-                    "y": 501
-                },
-                "SheetInformation": {
-                    "row": 10,
-                    "column": 5,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": null,
-                "OpacityDisable": 0.5,
-                "Label": "1",
-                "LabelCenter": false,
-                "NextItems": [
-                    {
-                        "Id": 0,
-                        "Name": "GTG Key 2",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "2"
-                    },
-                    {
-                        "Id": 1,
-                        "Name": "GTG Key 3",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "3"
-                    },
-                    {
-                        "Id": 2,
-                        "Name": "GTG Key 4",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "4"
-                    },
-                    {
-                        "Id": 3,
-                        "Name": "GTG Key 5",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "5"
-                    },
-                    {
-                        "Id": 4,
-                        "Name": "GTG Key 6",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "6"
-                    },
-                    {
-                        "Id": 5,
-                        "Name": "GTG Key 7",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "7"
-                    },
-                    {
-                        "Id": 6,
-                        "Name": "GTG Key 8",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "8"
-                    },
-                    {
-                        "Id": 7,
-                        "Name": "GTG Key 9",
-                        "SheetInformation": {
-                            "row": 10,
-                            "column": 5,
-                            "SpriteSheet": "Normal"
-                        },
-                        "Label": "9"
-                    }
-                ]
-            }
-        ]
+  {
+    "Informations": {
+      "Creator": "LinSoraK",
+      "Name": "Ocarina Of Time - 64 Template",
+      "Version": "1.3",
+      "Comments": "Tracker for open tracker concept only"
     }
+  },
+  {
+    "Datas": {
+      "Dimensions": {
+        "width": 335,
+        "height": 433
+      },
+      "Background": "backgroundOOT64.png",
+      "BackgroundColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "Items": {
+        "Normal": {
+          "ItemsSheet": "itemsOOT64.png",
+          "ItemsSheetDimensions": {
+            "width": 35,
+            "height": 35
+          }
+        }
+      }
+    }
+  },
+  {
+    "Fonts": {
+      "incrementalItemFont": {
+        "Name": "visitor1.ttf",
+        "Size": 18,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 0,
+            "g": 255,
+            "b": 0
+          }
+        }
+      },
+      "evolutionItemFont": {
+        "Name": "visitor1.ttf",
+        "Size": 18,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 0,
+            "g": 255,
+            "b": 0
+          }
+        }
+      },
+      "countItemFont": {
+        "Name": "visitor1.ttf",
+        "Size": 18,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 0,
+            "g": 255,
+            "b": 0
+          }
+        }
+      },
+      "labelItemFont": {
+        "Name": "cmd.woff",
+        "Size": 13,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 0,
+            "g": 255,
+            "b": 255
+          }
+        }
+      },
+      "hintFont": {
+        "Name": "lm.ttf",
+        "Size": 11,
+        "Colors": {
+          "Normal": {
+            "r": 0,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 0,
+            "g": 255,
+            "b": 255
+          }
+        }
+      }
+    }
+  },
+  {
+    "Items": [
+      {
+        "Id": 0,
+        "Kind": "IncrementalItem",
+        "Name": "Deku Stick",
+        "Positions": {
+          "x": 28,
+          "y": 28
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Increment": ["20", "30"]
+      },
+      {
+        "Id": 1,
+        "Kind": "IncrementalItem",
+        "Name": "Deku Nut",
+        "Positions": {
+          "x": 69,
+          "y": 28
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Increment": ["30", "40"]
+      },
+      {
+        "Id": 2,
+        "Kind": "IncrementalItem",
+        "Name": "Bomb",
+        "Positions": {
+          "x": 110,
+          "y": 28
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Increment": ["30", "40"]
+      },
+      {
+        "Id": 3,
+        "Kind": "IncrementalItem",
+        "Name": "Fairy Bow",
+        "Positions": {
+          "x": 151,
+          "y": 28
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Increment": ["40", "50"]
+      },
+      {
+        "Id": 4,
+        "Kind": "Item",
+        "Name": "Fire Arrow",
+        "Positions": {
+          "x": 192,
+          "y": 28
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 5,
+        "Kind": "Item",
+        "Name": "Din Fire",
+        "Positions": {
+          "x": 234,
+          "y": 28
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 6,
+        "Kind": "IncrementalItem",
+        "Name": "Fairy Slingshot",
+        "Positions": {
+          "x": 28,
+          "y": 68
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 7,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Increment": ["40", "50"]
+      },
+      {
+        "Id": 7,
+        "Kind": "EvolutionItem",
+        "Name": "Fairy Ocarina",
+        "Positions": {
+          "x": 69,
+          "y": 68
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 8,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Ocarina of Time",
+            "SheetInformation": {
+              "row": 1,
+              "column": 9,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 8,
+        "Kind": "Item",
+        "Name": "Bombchu",
+        "Positions": {
+          "x": 110,
+          "y": 68
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 10,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 9,
+        "Kind": "EvolutionItem",
+        "Name": "Hookshot",
+        "Positions": {
+          "x": 151,
+          "y": 68
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 11,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "H",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Longshot",
+            "SheetInformation": {
+              "row": 1,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "L"
+          }
+        ]
+      },
+      {
+        "Id": 10,
+        "Kind": "Item",
+        "Name": "Ice Arrow",
+        "Positions": {
+          "x": 193,
+          "y": 68
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 11,
+        "Kind": "Item",
+        "Name": "Farore Wind",
+        "Positions": {
+          "x": 234,
+          "y": 68
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 12,
+        "Kind": "Item",
+        "Name": "Boomerang",
+        "Positions": {
+          "x": 28,
+          "y": 108
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 13,
+        "Kind": "Item",
+        "Name": "Lens of Truth",
+        "Positions": {
+          "x": 69,
+          "y": 108
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 14,
+        "Kind": "Item",
+        "Name": "Magic Bean",
+        "Positions": {
+          "x": 110,
+          "y": 108
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 15,
+        "Kind": "Item",
+        "Name": "Megaton Hammer",
+        "Positions": {
+          "x": 151,
+          "y": 108
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 16,
+        "Kind": "Item",
+        "Name": "Light Arrow",
+        "Positions": {
+          "x": 193,
+          "y": 108
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 7,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 17,
+        "Kind": "Item",
+        "Name": "Nayru Love",
+        "Positions": {
+          "x": 234,
+          "y": 108
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 8,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 18,
+        "Kind": "EvolutionItem",
+        "Name": "Empty Bottle",
+        "Positions": {
+          "x": 28,
+          "y": 148
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Red Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 10,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Green Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 11,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 2,
+            "Name": "Blue Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 3,
+            "Name": "Fairy",
+            "SheetInformation": {
+              "row": 3,
+              "column": 1,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 4,
+            "Name": "Fish",
+            "SheetInformation": {
+              "row": 3,
+              "column": 2,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 5,
+            "Name": "Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 3,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 6,
+            "Name": "Half Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 8,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 7,
+            "Name": "Ruto Letter",
+            "SheetInformation": {
+              "row": 3,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 8,
+            "Name": "Blue Fire",
+            "SheetInformation": {
+              "row": 3,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 9,
+            "Name": "Bugs",
+            "SheetInformation": {
+              "row": 3,
+              "column": 6,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 10,
+            "Name": "Big Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 7,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 11,
+            "Name": "Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 9,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 19,
+        "Kind": "EvolutionItem",
+        "Name": "Empty Bottle",
+        "Positions": {
+          "x": 69,
+          "y": 148
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Red Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 10,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Green Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 11,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 2,
+            "Name": "Blue Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 3,
+            "Name": "Fairy",
+            "SheetInformation": {
+              "row": 3,
+              "column": 1,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 4,
+            "Name": "Fish",
+            "SheetInformation": {
+              "row": 3,
+              "column": 2,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 5,
+            "Name": "Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 3,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 6,
+            "Name": "Half Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 8,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 7,
+            "Name": "Ruto Letter",
+            "SheetInformation": {
+              "row": 3,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 8,
+            "Name": "Blue Fire",
+            "SheetInformation": {
+              "row": 3,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 9,
+            "Name": "Bugs",
+            "SheetInformation": {
+              "row": 3,
+              "column": 6,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 10,
+            "Name": "Big Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 7,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 11,
+            "Name": "Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 9,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 20,
+        "Kind": "EvolutionItem",
+        "Name": "Empty Bottle",
+        "Positions": {
+          "x": 110,
+          "y": 148
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Red Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 10,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Green Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 11,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 2,
+            "Name": "Blue Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 3,
+            "Name": "Fairy",
+            "SheetInformation": {
+              "row": 3,
+              "column": 1,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 4,
+            "Name": "Fish",
+            "SheetInformation": {
+              "row": 3,
+              "column": 2,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 5,
+            "Name": "Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 3,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 6,
+            "Name": "Half Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 8,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 7,
+            "Name": "Ruto Letter",
+            "SheetInformation": {
+              "row": 3,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 8,
+            "Name": "Blue Fire",
+            "SheetInformation": {
+              "row": 3,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 9,
+            "Name": "Bugs",
+            "SheetInformation": {
+              "row": 3,
+              "column": 6,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 10,
+            "Name": "Big Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 7,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 11,
+            "Name": "Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 9,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 21,
+        "Kind": "EvolutionItem",
+        "Name": "Empty Bottle",
+        "Positions": {
+          "x": 151,
+          "y": 148
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Red Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 10,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Green Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 11,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 2,
+            "Name": "Blue Potion",
+            "SheetInformation": {
+              "row": 2,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 3,
+            "Name": "Fairy",
+            "SheetInformation": {
+              "row": 3,
+              "column": 1,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 4,
+            "Name": "Fish",
+            "SheetInformation": {
+              "row": 3,
+              "column": 2,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 5,
+            "Name": "Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 3,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 6,
+            "Name": "Half Milk",
+            "SheetInformation": {
+              "row": 3,
+              "column": 8,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 7,
+            "Name": "Ruto Letter",
+            "SheetInformation": {
+              "row": 3,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 8,
+            "Name": "Blue Fire",
+            "SheetInformation": {
+              "row": 3,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 9,
+            "Name": "Bugs",
+            "SheetInformation": {
+              "row": 3,
+              "column": 6,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 10,
+            "Name": "Big Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 7,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 11,
+            "Name": "Poe",
+            "SheetInformation": {
+              "row": 3,
+              "column": 9,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 22,
+        "Kind": "EvolutionItem",
+        "Name": "Egg",
+        "Positions": {
+          "x": 192,
+          "y": 148
+        },
+        "SheetInformation": {
+          "row": 4,
+          "column": 10,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Cucco",
+            "SheetInformation": {
+              "row": 4,
+              "column": 11,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Cojiro",
+            "SheetInformation": {
+              "row": 4,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 2,
+            "Name": "Odd Mushroom",
+            "SheetInformation": {
+              "row": 5,
+              "column": 1,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 3,
+            "Name": "Odd Potion",
+            "SheetInformation": {
+              "row": 5,
+              "column": 2,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 4,
+            "Name": "Poacher Saw",
+            "SheetInformation": {
+              "row": 5,
+              "column": 3,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 5,
+            "Name": "Broken Goron Sword",
+            "SheetInformation": {
+              "row": 5,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 6,
+            "Name": "Prescription",
+            "SheetInformation": {
+              "row": 5,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 7,
+            "Name": "Eyeball Frog",
+            "SheetInformation": {
+              "row": 5,
+              "column": 6,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 8,
+            "Name": "World Finest Eye Drops",
+            "SheetInformation": {
+              "row": 5,
+              "column": 7,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 9,
+            "Name": "Claim Check",
+            "SheetInformation": {
+              "row": 5,
+              "column": 8,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 23,
+        "Kind": "EvolutionItem",
+        "Name": "Egg",
+        "Positions": {
+          "x": 234,
+          "y": 148
+        },
+        "SheetInformation": {
+          "row": 3,
+          "column": 10,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Cucco",
+            "SheetInformation": {
+              "row": 3,
+              "column": 11,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Zelda Letter",
+            "SheetInformation": {
+              "row": 3,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 2,
+            "Name": "Keaton Mask",
+            "SheetInformation": {
+              "row": 4,
+              "column": 1,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 3,
+            "Name": "Skull Mask",
+            "SheetInformation": {
+              "row": 4,
+              "column": 2,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 4,
+            "Name": "Spooky Mask",
+            "SheetInformation": {
+              "row": 4,
+              "column": 3,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 5,
+            "Name": "Bunny Hood",
+            "SheetInformation": {
+              "row": 4,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 6,
+            "Name": "Goron Mask",
+            "SheetInformation": {
+              "row": 4,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 7,
+            "Name": "Zora Mask",
+            "SheetInformation": {
+              "row": 4,
+              "column": 6,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 8,
+            "Name": "Gerudo Mask",
+            "SheetInformation": {
+              "row": 4,
+              "column": 7,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 9,
+            "Name": "Mask of Truth",
+            "SheetInformation": {
+              "row": 4,
+              "column": 8,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 10,
+            "Name": "None",
+            "SheetInformation": {
+              "row": 4,
+              "column": 9,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 24,
+        "Kind": "Item",
+        "Name": "Kokiri Sword",
+        "Positions": {
+          "x": 28,
+          "y": 196
+        },
+        "SheetInformation": {
+          "row": 5,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 25,
+        "Kind": "Item",
+        "Name": "Master Sword",
+        "Positions": {
+          "x": 69,
+          "y": 196
+        },
+        "SheetInformation": {
+          "row": 5,
+          "column": 10,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 26,
+        "Kind": "Item",
+        "Name": "Biggoron Sword",
+        "Positions": {
+          "x": 110,
+          "y": 196
+        },
+        "SheetInformation": {
+          "row": 5,
+          "column": 11,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 27,
+        "Kind": "Item",
+        "Name": "Deku Shield",
+        "Positions": {
+          "x": 28,
+          "y": 236
+        },
+        "SheetInformation": {
+          "row": 5,
+          "column": 12,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 28,
+        "Kind": "Item",
+        "Name": "Hylian Shield",
+        "Positions": {
+          "x": 69,
+          "y": 236
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 29,
+        "Kind": "Item",
+        "Name": "Mirror Shield",
+        "Positions": {
+          "x": 110,
+          "y": 236
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 30,
+        "Kind": "Item",
+        "Name": "Kokiri Tunic",
+        "Positions": {
+          "x": 28,
+          "y": 276
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": true,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 31,
+        "Kind": "Item",
+        "Name": "Goron Tunic",
+        "Positions": {
+          "x": 69,
+          "y": 276
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 32,
+        "Kind": "Item",
+        "Name": "Zora Tunic",
+        "Positions": {
+          "x": 110,
+          "y": 276
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 33,
+        "Kind": "Item",
+        "Name": "Kokiri Boots",
+        "Positions": {
+          "x": 28,
+          "y": 318
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": true,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 34,
+        "Kind": "Item",
+        "Name": "Iron Boots",
+        "Positions": {
+          "x": 69,
+          "y": 318
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 7,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 35,
+        "Kind": "Item",
+        "Name": "Hover Boots",
+        "Positions": {
+          "x": 110,
+          "y": 318
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 8,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 36,
+        "Kind": "CountItem",
+        "Name": "Skulls",
+        "Positions": {
+          "x": 193,
+          "y": 196
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": true,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "valueMin": 0,
+        "valueMax": 100,
+        "valueIncrease": 1,
+        "valueStart": 0
+      },
+      {
+        "Id": 37,
+        "Kind": "LabelItem",
+        "Name": "Kokiri Emerald",
+        "Positions": {
+          "x": 151,
+          "y": 318
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 38,
+        "Kind": "LabelItem",
+        "Name": "Goron Ruby",
+        "Positions": {
+          "x": 193,
+          "y": 318
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 39,
+        "Kind": "LabelItem",
+        "Name": "Zora Sapphire",
+        "Positions": {
+          "x": 234,
+          "y": 318
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 7,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 40,
+        "Kind": "EvolutionItem",
+        "Name": "Magic I",
+        "Positions": {
+          "x": 151,
+          "y": 236
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Magic II",
+            "SheetInformation": {
+              "row": 8,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 41,
+        "Kind": "Item",
+        "Name": "Stone of Agony",
+        "Positions": {
+          "x": 151,
+          "y": 276
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 42,
+        "Kind": "EvolutionItem",
+        "Name": "Silver Scale",
+        "Positions": {
+          "x": 193,
+          "y": 276
+        },
+        "SheetInformation": {
+          "row": 7,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Golden Scale",
+            "SheetInformation": {
+              "row": 7,
+              "column": 10,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 43,
+        "Kind": "EvolutionItem",
+        "Name": "Goron Bracelet",
+        "Positions": {
+          "x": 234,
+          "y": 276
+        },
+        "SheetInformation": {
+          "row": 7,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Silver Gauntlets",
+            "SheetInformation": {
+              "row": 7,
+              "column": 7,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Golden Gauntlets",
+            "SheetInformation": {
+              "row": 7,
+              "column": 8,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 44,
+        "Kind": "EvolutionItem",
+        "Name": "Rupee Upgrade I",
+        "Positions": {
+          "x": 193,
+          "y": 236
+        },
+        "SheetInformation": {
+          "row": 7,
+          "column": 11,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "200",
+        "LabelCenter": true,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Rupee Upgrade II",
+            "SheetInformation": {
+              "row": 7,
+              "column": 11,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "500"
+          },
+          {
+            "Id": 1,
+            "Name": "Rupee Upgrade III",
+            "SheetInformation": {
+              "row": 7,
+              "column": 12,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "999"
+          }
+        ]
+      },
+      {
+        "Id": 45,
+        "Kind": "Item",
+        "Name": "Gerudo Card",
+        "Positions": {
+          "x": 234,
+          "y": 236
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 46,
+        "Kind": "LabelItem",
+        "Name": "Forest Medallion",
+        "Positions": {
+          "x": 28,
+          "y": 365
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 8,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 47,
+        "Kind": "LabelItem",
+        "Name": "Fire Medallion",
+        "Positions": {
+          "x": 69,
+          "y": 365
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 48,
+        "Kind": "LabelItem",
+        "Name": "Water Medallion",
+        "Positions": {
+          "x": 110,
+          "y": 365
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 10,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 49,
+        "Kind": "LabelItem",
+        "Name": "Shadow Medallion",
+        "Positions": {
+          "x": 151,
+          "y": 365
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 11,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 50,
+        "Kind": "LabelItem",
+        "Name": "Spirit Medallion",
+        "Positions": {
+          "x": 193,
+          "y": 365
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 12,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 51,
+        "Kind": "LabelItem",
+        "Name": "Light Medallion",
+        "Positions": {
+          "x": 234,
+          "y": 365
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "MQ",
+        "OpacityDisable": 0.5,
+        "LabelList": [
+          "????",
+          "FREE",
+          "DEKU",
+          "DC",
+          "JABU",
+          "FOREST",
+          "FIRE",
+          "WATER",
+          "SHADOW",
+          "SPIRIT"
+        ]
+      },
+      {
+        "Id": 52,
+        "Kind": "CheckItem",
+        "Name": "Zelda Lullaby",
+        "Positions": {
+          "x": 279,
+          "y": 23
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 53,
+        "Kind": "CheckItem",
+        "Name": "Epona Song",
+        "Positions": {
+          "x": 279,
+          "y": 58
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 54,
+        "Kind": "CheckItem",
+        "Name": "Saria Song",
+        "Positions": {
+          "x": 279,
+          "y": 93
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 55,
+        "Kind": "CheckItem",
+        "Name": "Sun Song",
+        "Positions": {
+          "x": 279,
+          "y": 125
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 56,
+        "Kind": "CheckItem",
+        "Name": "Song of Time",
+        "Positions": {
+          "x": 279,
+          "y": 157
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 57,
+        "Kind": "CheckItem",
+        "Name": "Song of Storms",
+        "Positions": {
+          "x": 279,
+          "y": 189
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 7,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 58,
+        "Kind": "CheckItem",
+        "Name": "Minuet of Forest",
+        "Positions": {
+          "x": 278,
+          "y": 219
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 8,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 59,
+        "Kind": "CheckItem",
+        "Name": "Bolero of Fire",
+        "Positions": {
+          "x": 278,
+          "y": 250
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 9,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 60,
+        "Kind": "CheckItem",
+        "Name": "Serenade of Water",
+        "Positions": {
+          "x": 278,
+          "y": 281
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 10,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 61,
+        "Kind": "CheckItem",
+        "Name": "Requiem of Spirit",
+        "Positions": {
+          "x": 278,
+          "y": 312
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 11,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 62,
+        "Kind": "CheckItem",
+        "Name": "Nocturne of Shadow",
+        "Positions": {
+          "x": 278,
+          "y": 343
+        },
+        "SheetInformation": {
+          "row": 9,
+          "column": 12,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 63,
+        "Kind": "CheckItem",
+        "Name": "Prelude of Light",
+        "Positions": {
+          "x": 278,
+          "y": 374
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "CheckImageSheetInformation": {
+          "row": 10,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        }
+      },
+      {
+        "Id": 64,
+        "Kind": "GoModeItem",
+        "Name": "Go Mode",
+        "Positions": {
+          "x": 151,
+          "y": 196
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "BackgroundGlow": "light.png"
+      },
+      {
+        "Id": 65,
+        "Kind": "EvolutionItem",
+        "Name": "Forest Key 1",
+        "Positions": {
+          "x": 28,
+          "y": 421
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Forest Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          },
+          {
+            "Id": 1,
+            "Name": "Forest Key 3",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "3"
+          },
+          {
+            "Id": 2,
+            "Name": "Forest Key 4",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "4"
+          },
+          {
+            "Id": 3,
+            "Name": "Forest Key 5",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "5"
+          }
+        ]
+      },
+      {
+        "Id": 66,
+        "Kind": "Item",
+        "Name": "Forest Boss Key",
+        "Positions": {
+          "x": 70,
+          "y": 421
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 67,
+        "Kind": "EvolutionItem",
+        "Name": "Fire Key 1",
+        "Positions": {
+          "x": 28,
+          "y": 461
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Fire Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          },
+          {
+            "Id": 1,
+            "Name": "Fire Key 3",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "3"
+          },
+          {
+            "Id": 2,
+            "Name": "Fire Key 4",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "4"
+          },
+          {
+            "Id": 3,
+            "Name": "Fire Key 5",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "5"
+          },
+          {
+            "Id": 4,
+            "Name": "Fire Key 6",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "6"
+          },
+          {
+            "Id": 5,
+            "Name": "Fire Key 7",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "7"
+          },
+          {
+            "Id": 6,
+            "Name": "Fire Key 8",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "8"
+          }
+        ]
+      },
+      {
+        "Id": 68,
+        "Kind": "Item",
+        "Name": "Fire Boss Key",
+        "Positions": {
+          "x": 70,
+          "y": 461
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 69,
+        "Kind": "EvolutionItem",
+        "Name": "Water Key 1",
+        "Positions": {
+          "x": 28,
+          "y": 501
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Water Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          },
+          {
+            "Id": 1,
+            "Name": "Water Key 3",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "3"
+          },
+          {
+            "Id": 2,
+            "Name": "Water Key 4",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "4"
+          },
+          {
+            "Id": 3,
+            "Name": "Water Key 5",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "5"
+          },
+          {
+            "Id": 4,
+            "Name": "Water Key 6",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "6"
+          }
+        ]
+      },
+      {
+        "Id": 70,
+        "Kind": "Item",
+        "Name": "Water Boss Key",
+        "Positions": {
+          "x": 70,
+          "y": 501
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 71,
+        "Kind": "EvolutionItem",
+        "Name": "Shadow Key 1",
+        "Positions": {
+          "x": 110,
+          "y": 421
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Shadow Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          },
+          {
+            "Id": 1,
+            "Name": "Shadow Key 3",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "3"
+          },
+          {
+            "Id": 2,
+            "Name": "Shadow Key 4",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "4"
+          },
+          {
+            "Id": 3,
+            "Name": "Shadow Key 5",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "5"
+          }
+        ]
+      },
+      {
+        "Id": 72,
+        "Kind": "Item",
+        "Name": "Shadow Boss Key",
+        "Positions": {
+          "x": 152,
+          "y": 421
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 73,
+        "Kind": "EvolutionItem",
+        "Name": "Spirit Key 1",
+        "Positions": {
+          "x": 110,
+          "y": 461
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Spirit Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          },
+          {
+            "Id": 1,
+            "Name": "Spirit Key 3",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "3"
+          },
+          {
+            "Id": 2,
+            "Name": "Spirit Key 4",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "4"
+          },
+          {
+            "Id": 3,
+            "Name": "Spirit Key 5",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "5"
+          }
+        ]
+      },
+      {
+        "Id": 74,
+        "Kind": "Item",
+        "Name": "Spirit Boss Key",
+        "Positions": {
+          "x": 152,
+          "y": 461
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 75,
+        "Kind": "EvolutionItem",
+        "Name": "Ganon Key 1",
+        "Positions": {
+          "x": 110,
+          "y": 501
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Ganon Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          }
+        ]
+      },
+      {
+        "Id": 76,
+        "Kind": "Item",
+        "Name": "Ganon Boss Key",
+        "Positions": {
+          "x": 152,
+          "y": 501
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 77,
+        "Kind": "EvolutionItem",
+        "Name": "BOTW Key 1",
+        "Positions": {
+          "x": 213,
+          "y": 421
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "BOTW Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          },
+          {
+            "Id": 1,
+            "Name": "BOTW Key 3",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "3"
+          }
+        ]
+      },
+      {
+        "Id": 78,
+        "Kind": "EvolutionItem",
+        "Name": "Fortress Key 1",
+        "Positions": {
+          "x": 213,
+          "y": 461
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": []
+      },
+      {
+        "Id": 79,
+        "Kind": "EvolutionItem",
+        "Name": "GTG Key 1",
+        "Positions": {
+          "x": 213,
+          "y": 501
+        },
+        "SheetInformation": {
+          "row": 10,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5,
+        "Label": "1",
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "GTG Key 2",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "2"
+          },
+          {
+            "Id": 1,
+            "Name": "GTG Key 3",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "3"
+          },
+          {
+            "Id": 2,
+            "Name": "GTG Key 4",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "4"
+          },
+          {
+            "Id": 3,
+            "Name": "GTG Key 5",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "5"
+          },
+          {
+            "Id": 4,
+            "Name": "GTG Key 6",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "6"
+          },
+          {
+            "Id": 5,
+            "Name": "GTG Key 7",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "7"
+          },
+          {
+            "Id": 6,
+            "Name": "GTG Key 8",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "8"
+          },
+          {
+            "Id": 7,
+            "Name": "GTG Key 9",
+            "SheetInformation": {
+              "row": 10,
+              "column": 5,
+              "SpriteSheet": "Normal"
+            },
+            "Label": "9"
+          }
+        ]
+      }
+    ]
+  }
 ]

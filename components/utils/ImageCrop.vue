@@ -1,9 +1,9 @@
 <template>
-  <div :style="cropStyle" class="overflow-hidden z-20 relative"/>
+  <div :style="cropStyle" class="overflow-hidden z-20 relative" />
 </template>
 
 <script setup>
-import { computed, defineProps  } from 'vue';
+import { computed, defineProps } from "vue";
 
 const props = defineProps({
   width: {
@@ -28,12 +28,12 @@ const props = defineProps({
   },
   opacity: {
     type: Number,
-    default: 1
+    default: 1,
   },
   grayScale: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 
 const cropStyle = computed(() => {
@@ -45,13 +45,12 @@ const cropStyle = computed(() => {
     height: `${props.height}px`,
     backgroundImage: `url(${props.image})`,
     backgroundPosition: `-${offsetX}px -${offsetY}px`,
-    backgroundSize: 'auto',
-    backgroundRepeat: 'no-repeat',
+    backgroundSize: "auto",
+    backgroundRepeat: "no-repeat",
     opacity: props.opacity,
-    filter: props.grayScale ? 'grayscale(100%)' : 'none',
+    filter: props.grayScale ? "grayscale(100%)" : "none",
   };
 });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
