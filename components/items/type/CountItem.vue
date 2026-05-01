@@ -45,14 +45,15 @@ const handleWheel = (event) => {
       @contextmenu.prevent="updateStateDec()"
       @wheel.prevent="handleWheel($event)"
   >
-    <div class="relative" :style="{
+    <div
+class="relative" :style="{
         width: `${2 * itemSheetDimensions.width}px`,
         height: `${itemSheetDimensions.height}px`,
       }">
       <IconItem
           :item="item"
           :active="defaultActive"
-      ></IconItem>
+      />
     </div>
     <div :style="{fontFamily: 'countItemFont', color: stateStore.get(id) === count.max ? 'var(--color-countItemFont-max)' : 'var(--color-countItemFont)'}" class="z-20 h-full flex justify-center items-center text-center w-full text-lg select-none text-shadow">
       {{stateStore.get(id)}}

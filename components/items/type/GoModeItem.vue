@@ -33,17 +33,19 @@ const itemSheetDimensions = trackerStore.itemSheetDimensions(sheet.value.name)
         v-if="stateStore.get(id)"
         :item="item"
         :active="stateStore.get(id)"
-    ></IconItem>
-    <div v-else :style="{
+    />
+    <div
+v-else :style="{
       width: itemSheetDimensions.width + 'px',
       height: itemSheetDimensions.height + 'px',
-    }"></div>
+    }"/>
   </div>
-  <div class="absolute z-20 select-none pointer-events-none -translate-x-1/2 -translate-y-1/2 duration-1000	" :style="{
+  <div
+class="absolute z-20 select-none pointer-events-none -translate-x-1/2 -translate-y-1/2 duration-1000	" :style="{
         left: position.x + 18 + 'px',
         top: position.y + 18 + 'px',
       }" :class="{hidden: !stateStore.get(id)}">
-    <img class="animate-low-spin" :src="glowImage" alt="glow" />
+    <img class="animate-low-spin" :src="glowImage" alt="glow" >
   </div>
 </template>
 

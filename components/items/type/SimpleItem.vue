@@ -28,7 +28,7 @@ const update = () => {
     <IconItem
       :item="item"
       :active="stateStore.get(id)"
-    ></IconItem>
+    />
   </div>
 </template>
 

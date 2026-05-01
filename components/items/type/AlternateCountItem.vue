@@ -48,10 +48,10 @@ const handleWheel = (event) => {
     <IconItem
         :item="item"
         :active="stateStore.get(id) > 0"
-    ></IconItem>
+    />
     <div
-      class="absolute flex items-end"
       v-if="labelPosition === 'left'"
+      class="absolute flex items-end"
       :style="{
         width: itemSheetDimensions.width,
         height: itemSheetDimensions.height,

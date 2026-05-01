@@ -62,7 +62,7 @@ useHiddenScrollBarOnSmallWindow(props.isSmallWindow)
 <template>
   <div v-if="loaded" class="">
     <div class="relative" :style="{backgroundColor: backgroundColor, width: dimensions.width + 'px', height: dimensions.height + 'px'}">
-      <ItemList :isSmallWindow="isSmallWindow" />
+      <ItemList :is-small-window="isSmallWindow" />
       <img :src="background" alt="Background" class="absolute inset-0 z-0">
     </div>
   </div>
@@ -94,12 +94,14 @@ useHiddenScrollBarOnSmallWindow(props.isSmallWindow)
       </template>
 
       <div class="flex justify-end gap-4">
-        <UButton label="No" icon="i-heroicons-x-mark"
+        <UButton
+label="No" icon="i-heroicons-x-mark"
                  size="sm"
                  color="primary"
                  variant="outline"
                  :trailing="false" @click="isOpen = false"/>
-        <UButton label="Yes" icon="i-heroicons-check"
+        <UButton
+label="Yes" icon="i-heroicons-check"
                  size="sm"
                  color="red"
                  :trailing="false" @click="reset()"/>
@@ -132,7 +134,8 @@ useHiddenScrollBarOnSmallWindow(props.isSmallWindow)
       </template>
 
       <div class="flex justify-end gap-4">
-        <UButton label="Close and back to offline" icon="i-fa6-solid-arrow-rotate-left"
+        <UButton
+label="Close and back to offline" icon="i-fa6-solid-arrow-rotate-left"
                  size="sm"
                  color="primary"
                  variant="outline"

@@ -41,7 +41,7 @@ const updateActive = () => {
     <IconItem
       :item="item"
       :active="stateStore.get(id).active"
-    ></IconItem>
+    />
     <div class="relative">
       <div class="absolute -top-[46px] -right-[10px] z-20" :class="{'hidden': !stateStore.get(id).checkActive}">
         <ImageCrop
@@ -50,7 +50,7 @@ const updateActive = () => {
             :height="itemSheetDimensions.height"
             :row="sheet.row"
             :column="sheet.column"
-        ></ImageCrop>
+        />
       </div>
     </div>
   </div>

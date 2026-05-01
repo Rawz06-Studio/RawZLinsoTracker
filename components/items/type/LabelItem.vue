@@ -68,7 +68,7 @@ const handleRightClick = () => {
     <IconItem
         :item="item"
         :active="stateStore.get(id).active"
-    ></IconItem>
+    />
     <div :style="{fontFamily: 'labelItemFont', color: 'var(--color-labelItemFont)', fontSize: sizeLabel + 'px', top: itemSheetDimensions.height - item.OffsetLabel + 'px'}" class="z-20 absolute w-full text-center text-xs select-none text-shadow">
       {{currentLabel}}
     </div>

@@ -22,7 +22,7 @@ const updateStateInc = () => {
   stateStore.update(id.value, {...stateStore.get(id.value), state: (stateStore.get(id.value).state + 1)%max.value});
 }
 const updateStateDec = () => {
-  stateStore.update(id.value, {...stateStore.get(id.value), state: stateStore.get(id.value).state === 0 ? max - 1 : (stateStore.get(id.value).state - 1)%max.value});
+  stateStore.update(id.value, {...stateStore.get(id.value), state: stateStore.get(id.value).state === 0 ? max.value - 1 : (stateStore.get(id.value).state - 1)%max.value});
 }
 
 const currentItem = computed(() => {
@@ -36,8 +36,8 @@ const currentItem = computed(() => {
 
 <template>
   <div
-      class="absolute z-10"
       v-if="stateStore.get(id) !== undefined && stateStore.get(id) !== null"
+      class="absolute z-10"
       :style="{
         left: position.x + 'px',
         top: position.y + 'px',
@@ -48,8 +48,8 @@ const currentItem = computed(() => {
     <IconItem
         :item="currentItem"
         :active="stateStore.get(id).active"
-        :isMaxLabel="stateStore.get(id).state === max - 1"
-    ></IconItem>
+        :is-max-label="stateStore.get(id).state === max - 1"
+    />
     <div :style="{fontFamily: 'labelItemFont', color: 'var(--color-labelItemFont)', fontSize: sizeLabel + 'px'}" class="z-20 absolute top-[30px] w-full text-center text-sm select-none text-shadow">
       {{globalLabel}}
     </div>

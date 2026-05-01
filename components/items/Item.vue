@@ -29,52 +29,52 @@ stateStore.trackerInfo[id.value] = {
     <template v-if="itemType === 'Item'">
       <SimpleItem
           :item="item"
-      ></SimpleItem>
+      />
     </template>
     <template v-else-if="itemType === 'IncrementalItem'">
       <IncrementalItem
           :item="item"
-      ></IncrementalItem>
+      />
     </template>
     <template v-else-if="itemType === 'EvolutionItem'">
       <EvolutionItem
           :item="item"
-      ></EvolutionItem>
+      />
     </template>
     <template v-else-if="itemType === 'AlternateEvolutionItem'">
       <AlternateEvolutionItem
           :item="item"
-      ></AlternateEvolutionItem>
+      />
     </template>
     <template v-else-if="itemType === 'CountItem'">
       <CountItem
           :item="item"
-      ></CountItem>
+      />
     </template>
     <template v-else-if="itemType === 'LabelItem'">
       <LabelItem
           :item="item"
-      ></LabelItem>
+      />
     </template>
     <template v-else-if="itemType === 'CheckItem'">
       <CheckItem
           :item="item"
-      ></CheckItem>
+      />
     </template>
     <template v-else-if="itemType === 'GoModeItem'">
       <GoModeItem
           :item="item"
-      ></GoModeItem>
+      />
     </template>
     <template v-else-if="itemType === 'AlternateCountItem'">
       <AlternateCountItem
           :item="item"
-      ></AlternateCountItem>
+      />
     </template>
 
     <!-- default -->
     <template v-else>
-      <span></span>
+      <span/>
     </template>
   </div>
 </template>

@@ -27,13 +27,14 @@ useListenKey(true, true, 'l', () => isOpen.value = true)
 </script>
 
 <template>
-  <div class="mb-2 ml-2" v-if="!isSmallWindow">
-    <UButton label="Go Live" icon="i-heroicons-globe-alt"
+  <div v-if="!isSmallWindow" class="mb-2 ml-2">
+    <UButton
+label="Go Live" icon="i-heroicons-globe-alt"
              size="sm"
              color="primary"
              :trailing="false" @click="isOpen = true"/>
   </div>
-  <Tracker :tracker="tracker" :isSmallWindow="isSmallWindow" />
+  <Tracker :tracker="tracker" :is-small-window="isSmallWindow" />
   <UModal v-model="isOpen">
     <UCard
         :ui="{
@@ -60,7 +61,8 @@ useListenKey(true, true, 'l', () => isOpen.value = true)
             <UInput v-model="form.name" />
           </UFormGroup>
 
-          <UButton icon="i-heroicons-globe-alt"
+          <UButton
+icon="i-heroicons-globe-alt"
                    size="sm"
                    color="primary"
                    :trailing="false" type="submit">

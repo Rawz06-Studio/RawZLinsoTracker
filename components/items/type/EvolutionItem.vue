@@ -38,8 +38,8 @@ const currentItem = computed(() => {
     <IconItem
         :item="currentItem"
         :active="stateStore.get(id) > 0"
-        :isMaxLabel="stateStore.get(id) === max - 1"
-    ></IconItem>
+        :is-max-label="stateStore.get(id) === max - 1"
+    />
   </div>
 </template>
 

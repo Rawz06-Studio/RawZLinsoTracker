@@ -1,5 +1,6 @@
 import { Server as Engine } from "engine.io";
-import { Server, Socket } from "socket.io";
+import type { Socket } from "socket.io";
+import { Server } from "socket.io";
 import { defineEventHandler } from "h3";
 import {globalState} from "~/server/global-state";
 

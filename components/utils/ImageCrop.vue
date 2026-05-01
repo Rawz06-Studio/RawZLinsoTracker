@@ -1,10 +1,9 @@
 <template>
-  <div :style="cropStyle" class="overflow-hidden z-20 relative"></div>
+  <div :style="cropStyle" class="overflow-hidden z-20 relative"/>
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { defineProps } from 'vue';
+import { computed, defineProps  } from 'vue';
 
 const props = defineProps({
   width: {

@@ -47,7 +47,7 @@ const handleOpenTracker = async (tracker) => {
   </div>
   <div class="relative h-[510px] top-[60px] z-10 flex justify-between">
     <div class="mt-10 ml-10 grid grid-cols-5 grid-rows-4">
-      <NuxtLink @click="handleOpenTracker(tracker)" v-for="tracker of trackers" class="relative w-[122px] h-[122px] grid place-items-center group cursor-pointer" @mouseenter="currentHover = tracker" @mouseleave="currentHover = ''">
+      <NuxtLink v-for="tracker of trackers" class="relative w-[122px] h-[122px] grid place-items-center group cursor-pointer" @click="handleOpenTracker(tracker)" @mouseenter="currentHover = tracker" @mouseleave="currentHover = ''">
         <img :src="`/sources/${tracker}/icon.png`" alt="Background" class="z-30 row-start-1 col-start-1 translate-y-[-5px]">
         <img :src="`/default/glow-official.png`" alt="Glow" class="z-20 row-start-1 col-start-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <img :src="`/default/menu-official.png`" alt="Menu" class="z-20 row-start-1 col-start-1">
@@ -58,14 +58,14 @@ const handleOpenTracker = async (tracker) => {
         <img :src="`/sources/${currentHover}/illustration.png`" alt="Illustration" class="z-20 w-[600px] h-[500px]">
         <div class="absolute bottom-[10px] bg-gray-500 bg-opacity-40 text-white rounded-lg shadow-lg p-6 backdrop-blur-md w-[600px]">
           <h1 class="text-2xl font-bold mb-2">{{trackersInfo[currentHover].name}}</h1>
-          <div class="border-t border-gray-500 my-2"></div>
+          <div class="border-t border-gray-500 my-2"/>
           <p class="text-sm">
             <span class="font-semibold">Creator :</span> {{trackersInfo[currentHover].creator}}
           </p>
           <p class="text-sm">
             <span class="font-semibold">Version :</span> {{trackersInfo[currentHover].version}}
           </p>
-          <p class="text-sm" v-if="trackersInfo[currentHover].description">
+          <p v-if="trackersInfo[currentHover].description" class="text-sm">
             <span class="font-semibold">Description :</span> {{trackersInfo[currentHover].description}}
           </p>
         </div>

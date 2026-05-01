@@ -32,7 +32,7 @@ const update = (value) => {
     <IconItem
         :item="item"
         :active="stateStore.get(id) > 0"
-    ></IconItem>
+    />
     <div
         class="z-20 absolute top-[20px] select-none text-sm text-shadow"
         :class="{'hidden': stateStore.get(id)  < 2}"
