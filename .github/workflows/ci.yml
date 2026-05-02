@@ -13,3 +13,14 @@ jobs:
     secrets:
       NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
       NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+
+  sonar:
+    needs: release
+    uses: RawZ06-Studio/.github/.github/workflows/sonar-scan-node.yml@main
+    with:
+      node_version: '24'
+    secrets:
+      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
+      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
