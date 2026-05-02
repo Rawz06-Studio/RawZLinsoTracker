@@ -18,7 +18,7 @@ jobs:
 
   sonar:
     needs: release
-    uses: RawZ06-Studio/.github/.github/workflows/sonar-scan-node.yml@main
+    uses: RawZ06-Studio/.github/.github/workflows/node-ci-sonar.yml@main
     with:
       node_version: '24'
     secrets:
