@@ -1,745 +1,740 @@
 [
-    {
-        "Informations": {
-            "Creator": "ZorroDisco",
-            "Name": "Twilight Princess - Compact",
-            "Version": "1.1",
-            "Comments": "Tracker for Drehen tournament restream"
+  {
+    "Informations": {
+      "Creator": "ZorroDisco",
+      "Name": "Twilight Princess - Compact",
+      "Version": "1.1",
+      "Comments": "Tracker for Drehen tournament restream"
+    }
+  },
+  {
+    "Datas": {
+      "Dimensions": {
+        "width": 330,
+        "height": 220
+      },
+      "Background": "background_tp.png",
+      "BackgroundColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "Items": {
+        "Normal": {
+          "ItemsSheet": "item_tp.png",
+          "ItemsSheetDimensions": {
+            "width": 45,
+            "height": 45
+          }
         }
-    },
-    {
-        "Datas": {
-			"Dimensions": {
-				"width": 330,
-				"height": 220
-			},
-            "Background": "background_tp.png",
-            "BackgroundColor": {
-                "r": 0,
-                "g": 0,
-                "b": 0
-            },
-            "Items": {
-                "Normal": {
-                    "ItemsSheet": "item_tp.png",
-                    "ItemsSheetDimensions": {
-                        "width": 45,
-                        "height": 45
-                    }
-                }                
-            }
+      }
+    }
+  },
+  {
+    "Fonts": {
+      "incrementalItemFont": {
+        "Name": "visitor1.ttf",
+        "Size": 12,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 255,
+            "g": 200,
+            "b": 50
+          }
         }
-    },
-    {
-        "Fonts": {
-            "incrementalItemFont": {
-                "Name": "visitor1.ttf",
-                "Size": 12,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 255,
-                        "g": 200,
-                        "b": 50
-                    }
-                }
-            },
-            "evolutionItemFont": {
-                "Name": "visitor1.ttf",
-                "Size": 12,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 255,
-                        "g": 200,
-                        "b": 50
-                    }
-                }
-            },
-            "countItemFont": {
-                "Name": "visitor1.ttf",
-                "Size": 12,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 0
-                    }
-                }
-            },
-             "labelItemFont": {
-                "Name": "Outfit-Bold.ttf",
-                "Size": 13,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 0,
-                        "g": 255,
-                        "b": 255
-                    }
-                }
-            },
-            "hintFont": {
-                "Name": "lm.ttf",
-                "Size": 10,
-                "Colors": {
-                    "Normal": {
-                        "r": 220,
-                        "g": 0,
-                        "b": 220
-                    },
-                    "Max": {
-                        "r": 200,
-                        "g": 0,
-                        "b": 200
-                    }
-                }
-            },
-            "subMenuItemFont": {
-                "Name": "Outfit-Regular.ttf",
-                "Size": 12,
-                "Colors": {
-                    "Normal": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    },
-                    "Max": {
-                        "r": 255,
-                        "g": 200,
-                        "b": 50
-                    }
-                }
-            }
+      },
+      "evolutionItemFont": {
+        "Name": "visitor1.ttf",
+        "Size": 12,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 255,
+            "g": 200,
+            "b": 50
+          }
         }
-    },
-    {
-		"Items": [
-			{
-				"Id": 0,
-				"Kind": "EvolutionItem",
-				"Name": "Fishing Rod",
-				"Positions": {
-					"x": 125,
-					"y": 5
-				},
-				"SheetInformation": {
-					"row": 2,
-					"column": 1,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"Label": null,
-				"LabelCenter": false,
-				"NextItems": [
-					{
-						"Id": 0,
-						"Name": "Coral Rod ",
-						"SheetInformation": {
-							"row": 2,
-							"column": 5,
-							"SpriteSheet": "Normal"
-						},
-						"Label": null
-					}
-				]
-			},
-			{
-				"Id": 1,
-				"Kind": "Item",
-				"Name": "Slingshot",
-				"Positions": {
-					"x": 125,
-					"y": 50
-				},
-				"SheetInformation": {
-					"row": 3,
-					"column": 1,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 2,
-				"Kind": "Item",
-				"Name": "Lantern",
-				"Positions": {
-					"x": 125,
-					"y": 95
-				},
-				"SheetInformation": {
-					"row": 4,
-					"column": 1,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 3,
-				"Kind": "Item",
-				"Name": "Gale Boomerang",
-				"Positions": {
-					"x": 175,
-					"y": 5
-				},
-				"SheetInformation": {
-					"row": 2,
-					"column": 2,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 6,
-				"Kind": "Item",
-				"Name": "Iron Boots",
-				"Positions": {
-					"x": 275,
-					"y": 5
-				},
-				"SheetInformation": {
-					"row": 2,
-					"column": 4,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 7,
-				"Kind": "IncrementalItem",
-				"Name": "Hero Bow",
-				"Positions": {
-					"x": 225,
-					"y": 5
-				},
-				"SheetInformation": {
-					"row": 2,
-					"column": 3,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"StartIncrementIndex": 0,
-				"Increment": [
-				]
-			},
-			{
-				"Id": 15,
-				"Kind": "AlternateCountItem",
-				"Name": "Bomb Bag",
-				"Positions": {
-					"x": 175,
-					"y": 50
-				},
-				"SheetInformation": {
-					"row": 3,
-					"column": 2,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"LabelSize": 7,
-				"maxValue": 3,
-				"maxValueAlternate": 3,
-				"labelPosition": "right"
-			},
-			{
-				"Id": 8,
-				"Kind": "EvolutionItem",
-				"Name": "Clawshot",
-				"Positions": {
-					"x": 225,
-					"y": 50
-				},
-				"SheetInformation": {
-					"row": 3,
-					"column": 3,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"Label": null,
-				"LabelCenter": false,
-				"NextItems": [
-					{
-						"Id": 0,
-						"Name": "Double Clawshot",
-						"SheetInformation": {
-							"row": 3,
-							"column": 5,
-							"SpriteSheet": "Normal"
-						},
-						"Label": null
-					}
-				]
-			},
-			{
-				"Id": 9,
-				"Kind": "Item",
-				"Name": "Spinner",
-				"Positions": {
-					"x": 225,
-					"y": 95
-				},
-				"SheetInformation": {
-					"row": 4,
-					"column": 3,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 11,
-				"Kind": "Item",
-				"Name": "Ball and Chain",
-				"Positions": {
-					"x": 175,
-					"y": 95
-				},
-				"SheetInformation": {
-					"row": 4,
-					"column": 2,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 12,
-				"Kind": "EvolutionItem",
-				"Name": "Dominion Rod",
-				"Positions": {
-					"x": 275,
-					"y": 50
-				},
-				"SheetInformation": {
-					"row": 3,
-					"column": 6,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"Label": null,
-				"LabelCenter": false,
-				"NextItems": [
-					{
-						"Id": 0,
-						"Name": "Dominion Rod 2",
-						"SheetInformation": {
-							"row": 3,
-							"column": 4,
-							"SpriteSheet": "Normal"
-						},
-						"Label": null
-					}
-				]
-			},
-			{
-				"Id": 23,
-				"Kind": "Item",
-				"Name": "Ancient Sky Book",
-				"Positions": {
-					"x": 275,
-					"y": 95
-				},
-				"SheetInformation": {
-					"row": 4,
-					"column": 4,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"maxValue": 6,
-				"maxValueAlternate": 6
-			},
-			{
-				"Id": 158,
-				"Kind": "AlternateCountItem",
-				"Name": "Poe Souls",
-				"Positions": {
-					"x": 70,
-					"y": 135
-				},
-				"SheetInformation": {
-					"row": 6,
-					"column": 3,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"LabelSize": 7,
-				"maxValue": 60,
-				"maxValueAlternate": 60
-			},
-			{
-				"Id": 22,
-				"Kind": "AlternateCountItem",
-				"Name": "Hidden Skills",
-				"Positions": {
-					"x": 35,
-					"y": 135
-				},
-				"SheetInformation": {
-					"row": 6,
-					"column": 2,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"maxValue": 7,
-				"maxValueAlternate": 7
-			},
-			{
-				"Id": 27,
-				"Kind": "EvolutionItem",
-				"Name": "Wooden Sword",
-				"Positions": {
-					"x": 5,
-					"y": 10
-				},
-				"SheetInformation": {
-					"row": 1,
-					"column": 1,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"Label": null,
-				"LabelCenter": false,
-				"NextItems": [
-					{
-						"Id": 0,
-						"Name": "Ordon Sword",
-						"SheetInformation": {
-							"row": 1,
-							"column": 2,
-							"SpriteSheet": "Normal"
-						},
-						"Label": null
-					},
-					{
-						"Id": 1,
-						"Name": "Master Sword",
-						"SheetInformation": {
-							"row": 1,
-							"column": 3,
-							"SpriteSheet": "Normal"
-						},
-						"Label": null
-					},
-					{
-						"Id": 2,
-						"Name": "Light Sword",
-						"SheetInformation": {
-							"row": 1,
-							"column": 4,
-							"SpriteSheet": "Normal"
-						},
-						"Label": null
-					}
-				]
-			},
-			{
-				"Id": 36,
-				"Kind": "Item",
-				"Name": "Zora Armor",
-				"Positions": {
-					"x": 5,
-					"y": 65
-				},
-				"SheetInformation": {
-					"row": 1,
-					"column": 7,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 37,
-				"Kind": "Item",
-				"Name": "Magic Armor",
-				"Positions": {
-					"x": 47,
-					"y": 65
-				},
-				"SheetInformation": {
-					"row": 1,
-					"column": 8,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 24,
-				"Kind": "EvolutionItem",
-				"Name": "Ordon Shield",
-				"Positions": {
-					"x": 47,
-					"y": 10
-				},
-				"SheetInformation": {
-					"row": 1,
-					"column": 5,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"Label": null,
-				"LabelCenter": false,
-				"NextItems": [
-				{
-					"Id": 0,
-					"Name": "Hylian Shield",
-					"SheetInformation": {
-						"row": 1,
-						"column": 6,
-						"SpriteSheet": "Normal"
-					},
-					"Label": null
-				}
-				]
-			},
-			{
-				"Id": 60,
-				"Kind": "Item",
-				"Name": "Shard",
-				"Positions": {
-					"x": 0,
-					"y": 135
-				},
-				"SheetInformation": {
-					"row": 6,
-					"column": 1,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-				"Id": 50,
-				"Kind": "LabelItem",
-				"Name": "Auru Memo",
-				"Positions": {
-					"x": 70,
-					"y": 175
-				},
-				"SheetInformation": {
-					"row": 7,
-					"column": 3,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"OffsetLabel": 15,
-				"LabelSize": 11,
-				"LabelList": [
-					"Auru"
-				]
-			},
-			{
-				"Id": 51,
-				"Kind": "LabelItem",
-				"Name": "Ashei Sketch",
-				"Positions": {
-					"x": 35,
-					"y": 175
-				},
-				"SheetInformation": {
-					"row": 7,
-					"column": 2,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4,
-				"OffsetLabel": 15,
-				"LabelSize": 11,
-				"LabelList": [
-					"Ashei"
-				]
-			},
-			{
-				"Id": 55,
-				"Kind": "Item",
-				"Name": "Coro Key",
-				"Positions": {
-					"x": 0,
-					"y": 178
-				},
-				"SheetInformation": {
-					"row": 7,
-					"column": 1,
-					"SpriteSheet": "Normal"
-				},
-				"isActive": false,
-				"Hint": null,
-				"OpacityDisable": 0.4
-			},
-			{
-                "Id": 56,
-                "Kind": "LabelItem",
-                "Name": "Shard 1",
-                "Positions": {
-                    "x": 125,
-                    "y": 160
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 1,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "",
-                "OpacityDisable": 0.5,
-				"OffsetLabel": 3,
-				"LabelSize": 13,
-                "LabelList": [
-					"????",
-                    "FRST",
-					"MINE",
-					"LAKE",
-					"AG",
-					"RUINS",
-					"TOT",
-					"SKY",
-					"TWLT"
-                ]
+      },
+      "countItemFont": {
+        "Name": "visitor1.ttf",
+        "Size": 12,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 0,
+            "g": 255,
+            "b": 0
+          }
+        }
+      },
+      "labelItemFont": {
+        "Name": "Outfit-Bold.ttf",
+        "Size": 13,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 0,
+            "g": 255,
+            "b": 255
+          }
+        }
+      },
+      "hintFont": {
+        "Name": "lm.ttf",
+        "Size": 10,
+        "Colors": {
+          "Normal": {
+            "r": 220,
+            "g": 0,
+            "b": 220
+          },
+          "Max": {
+            "r": 200,
+            "g": 0,
+            "b": 200
+          }
+        }
+      },
+      "subMenuItemFont": {
+        "Name": "Outfit-Regular.ttf",
+        "Size": 12,
+        "Colors": {
+          "Normal": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "Max": {
+            "r": 255,
+            "g": 200,
+            "b": 50
+          }
+        }
+      }
+    }
+  },
+  {
+    "Items": [
+      {
+        "Id": 0,
+        "Kind": "EvolutionItem",
+        "Name": "Fishing Rod",
+        "Positions": {
+          "x": 125,
+          "y": 5
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Coral Rod ",
+            "SheetInformation": {
+              "row": 2,
+              "column": 5,
+              "SpriteSheet": "Normal"
             },
-			{
-                "Id": 57,
-                "Kind": "LabelItem",
-                "Name": "Shard 2",
-                "Positions": {
-                    "x": 175,
-                    "y": 160
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 2,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "",
-                "OpacityDisable": 0.5,
-				"OffsetLabel": 3,
-				"LabelSize": 13,
-                "LabelList": [
-                    "????",
-                    "FRST",
-					"MINE",
-					"LAKE",
-					"AG",
-					"RUINS",
-					"TOT",
-					"SKY",
-					"TWLT"
-                ]
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 1,
+        "Kind": "Item",
+        "Name": "Slingshot",
+        "Positions": {
+          "x": 125,
+          "y": 50
+        },
+        "SheetInformation": {
+          "row": 3,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 2,
+        "Kind": "Item",
+        "Name": "Lantern",
+        "Positions": {
+          "x": 125,
+          "y": 95
+        },
+        "SheetInformation": {
+          "row": 4,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 3,
+        "Kind": "Item",
+        "Name": "Gale Boomerang",
+        "Positions": {
+          "x": 175,
+          "y": 5
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 6,
+        "Kind": "Item",
+        "Name": "Iron Boots",
+        "Positions": {
+          "x": 275,
+          "y": 5
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 7,
+        "Kind": "IncrementalItem",
+        "Name": "Hero Bow",
+        "Positions": {
+          "x": 225,
+          "y": 5
+        },
+        "SheetInformation": {
+          "row": 2,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "StartIncrementIndex": 0,
+        "Increment": []
+      },
+      {
+        "Id": 15,
+        "Kind": "AlternateCountItem",
+        "Name": "Bomb Bag",
+        "Positions": {
+          "x": 175,
+          "y": 50
+        },
+        "SheetInformation": {
+          "row": 3,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "LabelSize": 7,
+        "maxValue": 3,
+        "maxValueAlternate": 3,
+        "labelPosition": "right"
+      },
+      {
+        "Id": 8,
+        "Kind": "EvolutionItem",
+        "Name": "Clawshot",
+        "Positions": {
+          "x": 225,
+          "y": 50
+        },
+        "SheetInformation": {
+          "row": 3,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Double Clawshot",
+            "SheetInformation": {
+              "row": 3,
+              "column": 5,
+              "SpriteSheet": "Normal"
             },
-			{
-                "Id": 58,
-                "Kind": "LabelItem",
-                "Name": "Shard 3",
-                "Positions": {
-                    "x": 225,
-                    "y": 160
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 3,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "",
-                "OpacityDisable": 0.5,
-				"OffsetLabel": 3,
-				"LabelSize": 13,
-                "LabelList": [
-                    "????",
-                    "FRST",
-					"MINE",
-					"LAKE",
-					"AG",
-					"RUINS",
-					"TOT",
-					"SKY",
-					"TWLT"
-                ]
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 9,
+        "Kind": "Item",
+        "Name": "Spinner",
+        "Positions": {
+          "x": 225,
+          "y": 95
+        },
+        "SheetInformation": {
+          "row": 4,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 11,
+        "Kind": "Item",
+        "Name": "Ball and Chain",
+        "Positions": {
+          "x": 175,
+          "y": 95
+        },
+        "SheetInformation": {
+          "row": 4,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 12,
+        "Kind": "EvolutionItem",
+        "Name": "Dominion Rod",
+        "Positions": {
+          "x": 275,
+          "y": 50
+        },
+        "SheetInformation": {
+          "row": 3,
+          "column": 6,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Dominion Rod 2",
+            "SheetInformation": {
+              "row": 3,
+              "column": 4,
+              "SpriteSheet": "Normal"
             },
-			{
-                "Id": 59,
-                "Kind": "LabelItem",
-                "Name": "Shard 4",
-                "Positions": {
-                    "x": 275,
-                    "y": 160
-                },
-                "SheetInformation": {
-                    "row": 8,
-                    "column": 4,
-                    "SpriteSheet": "Normal"
-                },
-                "isActive": false,
-                "Hint": "",
-                "OpacityDisable": 0.35,
-				"OffsetLabel": 3,
-				"LabelSize": 13,
-                "LabelList": [
-                    "????",
-                    "FRST",
-					"MINE",
-					"LAKE",
-					"AG",
-					"RUINS",
-					"TOT",
-					"SKY",
-					"TWLT"
-                ]
-            }
-		]
-	}
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 23,
+        "Kind": "Item",
+        "Name": "Ancient Sky Book",
+        "Positions": {
+          "x": 275,
+          "y": 95
+        },
+        "SheetInformation": {
+          "row": 4,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "maxValue": 6,
+        "maxValueAlternate": 6
+      },
+      {
+        "Id": 158,
+        "Kind": "AlternateCountItem",
+        "Name": "Poe Souls",
+        "Positions": {
+          "x": 70,
+          "y": 135
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "LabelSize": 7,
+        "maxValue": 60,
+        "maxValueAlternate": 60
+      },
+      {
+        "Id": 22,
+        "Kind": "AlternateCountItem",
+        "Name": "Hidden Skills",
+        "Positions": {
+          "x": 35,
+          "y": 135
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "maxValue": 7,
+        "maxValueAlternate": 7
+      },
+      {
+        "Id": 27,
+        "Kind": "EvolutionItem",
+        "Name": "Wooden Sword",
+        "Positions": {
+          "x": 5,
+          "y": 10
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Ordon Sword",
+            "SheetInformation": {
+              "row": 1,
+              "column": 2,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 1,
+            "Name": "Master Sword",
+            "SheetInformation": {
+              "row": 1,
+              "column": 3,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          },
+          {
+            "Id": 2,
+            "Name": "Light Sword",
+            "SheetInformation": {
+              "row": 1,
+              "column": 4,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 36,
+        "Kind": "Item",
+        "Name": "Zora Armor",
+        "Positions": {
+          "x": 5,
+          "y": 65
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 7,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 37,
+        "Kind": "Item",
+        "Name": "Magic Armor",
+        "Positions": {
+          "x": 47,
+          "y": 65
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 8,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 24,
+        "Kind": "EvolutionItem",
+        "Name": "Ordon Shield",
+        "Positions": {
+          "x": 47,
+          "y": 10
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 5,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Hylian Shield",
+            "SheetInformation": {
+              "row": 1,
+              "column": 6,
+              "SpriteSheet": "Normal"
+            },
+            "Label": null
+          }
+        ]
+      },
+      {
+        "Id": 60,
+        "Kind": "Item",
+        "Name": "Shard",
+        "Positions": {
+          "x": 0,
+          "y": 135
+        },
+        "SheetInformation": {
+          "row": 6,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 50,
+        "Kind": "LabelItem",
+        "Name": "Auru Memo",
+        "Positions": {
+          "x": 70,
+          "y": 175
+        },
+        "SheetInformation": {
+          "row": 7,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "OffsetLabel": 15,
+        "LabelSize": 11,
+        "LabelList": ["Auru"]
+      },
+      {
+        "Id": 51,
+        "Kind": "LabelItem",
+        "Name": "Ashei Sketch",
+        "Positions": {
+          "x": 35,
+          "y": 175
+        },
+        "SheetInformation": {
+          "row": 7,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4,
+        "OffsetLabel": 15,
+        "LabelSize": 11,
+        "LabelList": ["Ashei"]
+      },
+      {
+        "Id": 55,
+        "Kind": "Item",
+        "Name": "Coro Key",
+        "Positions": {
+          "x": 0,
+          "y": 178
+        },
+        "SheetInformation": {
+          "row": 7,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.4
+      },
+      {
+        "Id": 56,
+        "Kind": "LabelItem",
+        "Name": "Shard 1",
+        "Positions": {
+          "x": 125,
+          "y": 160
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 1,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "",
+        "OpacityDisable": 0.5,
+        "OffsetLabel": 3,
+        "LabelSize": 13,
+        "LabelList": [
+          "????",
+          "FRST",
+          "MINE",
+          "LAKE",
+          "AG",
+          "RUINS",
+          "TOT",
+          "SKY",
+          "TWLT"
+        ]
+      },
+      {
+        "Id": 57,
+        "Kind": "LabelItem",
+        "Name": "Shard 2",
+        "Positions": {
+          "x": 175,
+          "y": 160
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 2,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "",
+        "OpacityDisable": 0.5,
+        "OffsetLabel": 3,
+        "LabelSize": 13,
+        "LabelList": [
+          "????",
+          "FRST",
+          "MINE",
+          "LAKE",
+          "AG",
+          "RUINS",
+          "TOT",
+          "SKY",
+          "TWLT"
+        ]
+      },
+      {
+        "Id": 58,
+        "Kind": "LabelItem",
+        "Name": "Shard 3",
+        "Positions": {
+          "x": 225,
+          "y": 160
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 3,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "",
+        "OpacityDisable": 0.5,
+        "OffsetLabel": 3,
+        "LabelSize": 13,
+        "LabelList": [
+          "????",
+          "FRST",
+          "MINE",
+          "LAKE",
+          "AG",
+          "RUINS",
+          "TOT",
+          "SKY",
+          "TWLT"
+        ]
+      },
+      {
+        "Id": 59,
+        "Kind": "LabelItem",
+        "Name": "Shard 4",
+        "Positions": {
+          "x": 275,
+          "y": 160
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "",
+        "OpacityDisable": 0.35,
+        "OffsetLabel": 3,
+        "LabelSize": 13,
+        "LabelList": [
+          "????",
+          "FRST",
+          "MINE",
+          "LAKE",
+          "AG",
+          "RUINS",
+          "TOT",
+          "SKY",
+          "TWLT"
+        ]
+      }
+    ]
+  }
 ]

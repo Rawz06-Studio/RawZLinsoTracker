@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - develop
+  pull_request:
+
+jobs:
+  ci:
+    uses: RawZ06-Studio/.github/.github/workflows/node-ci.yml@main
+    secrets:
+      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
+      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+
+  sonar:
+    needs: ci
+    uses: RawZ06-Studio/.github/.github/workflows/node-ci-sonar.yml@main
+    with:
+      node_version: '24'
+    secrets:
+      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
+      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}

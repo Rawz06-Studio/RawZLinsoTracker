@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "rawz-linso-tracker",
   "private": true,
   "type": "module",
   "scripts": {
@@ -15,26 +15,25 @@
   },
   "dependencies": {
     "@kgierke/nuxt-basic-auth": "^1.7.0",
-    "@nuxt/fonts": "^0.7.2",
-    "@nuxt/icon": "^1.5.0",
-    "@nuxt/ui": "^2.18.4",
-    "@nuxtjs/color-mode": "^3.4.4",
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@pinia/nuxt": "^0.5.5",
-    "@vite-pwa/nuxt": "0.10.6",
-    "nuxt": "^3.14.159",
-    "pinia": "^2.2.6",
-    "socket.io": "^4.8.1",
-    "socket.io-client": "^4.8.1",
-    "vue": "latest"
+    "@nuxt/fonts": "^0.14.0",
+    "@nuxt/icon": "^2.2.1",
+    "@nuxt/ui": "^4.7.1",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@pinia/nuxt": "^0.11.3",
+    "nuxt": "^4.4.2",
+    "pinia": "^3.0.4",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "vue": "^3.5.33"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.5.4",
-    "eslint": "^9.9.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "@nuxt/eslint": "^1.15.2",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@8.15.4+sha1.c85a4305534f76d461407b59277b954bac97b5c4"
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
+  "version": "0.0.5"
 }
