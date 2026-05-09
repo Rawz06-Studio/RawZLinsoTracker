@@ -12,20 +12,14 @@ jobs:
       contents: write
     with:
       publishable: false       # application, pas de publish npm
-    secrets:
-      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
-      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+    secrets: inherit
 
   sonar:
     needs: release
     uses: RawZ06-Studio/.github/.github/workflows/node-ci-sonar.yml@main
     with:
       node_version: '24'
-    secrets:
-      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
-      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+    secrets: inherit
 
   docker:
     needs: release
@@ -33,7 +27,4 @@ jobs:
     with:
       image_name: tracker-online
       dokploy_app_id: Hf_pYEjZ17XZPpRh0fgAX
-    secrets:
-      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
-      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-      DOKPLOY_TOKEN: ${{ secrets.DOKPLOY_TOKEN }}
+    secrets: inherit
