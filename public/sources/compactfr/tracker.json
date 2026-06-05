@@ -2,9 +2,9 @@
   {
     "Informations": {
       "Creator": "ZorroDisco",
-      "Name": "Ocarina Of Time - Compact RSL",
+      "Name": "Ocarina Of Time - Franco",
       "Version": "1.1",
-      "Comments": "Tracker for RSL restream"
+      "Comments": "Tracker for Franco restream"
     }
   },
   {
@@ -13,7 +13,7 @@
         "width": 390,
         "height": 295
       },
-      "Background": "backgroundrsl.png",
+      "Background": "background.svg",
       "BackgroundColor": {
         "r": 0,
         "g": 0,
@@ -39,6 +39,13 @@
           "ItemsSheetDimensions": {
             "width": 25,
             "height": 25
+          }
+        },
+        "Small": {
+          "ItemsSheet": "small_items.svg",
+          "ItemsSheetDimensions": {
+            "width": 30,
+            "height": 30
           }
         }
       }
@@ -472,7 +479,7 @@
         "Name": "egg",
         "Positions": {
           "x": 45,
-          "y": 150
+          "y": 170
         },
         "SheetInformation": {
           "row": 5,
@@ -583,7 +590,7 @@
         "Name": "eggChild",
         "Positions": {
           "x": 5,
-          "y": 150
+          "y": 170
         },
         "SheetInformation": {
           "row": 5,
@@ -644,7 +651,7 @@
         "Name": "Bean",
         "Positions": {
           "x": 5,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 7,
@@ -661,7 +668,7 @@
         "Name": "Gerudo Card",
         "Positions": {
           "x": 45,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 2,
@@ -838,7 +845,7 @@
         "Name": "Skulls",
         "Positions": {
           "x": 87,
-          "y": 160
+          "y": 170
         },
         "SheetInformation": {
           "row": 2,
@@ -858,7 +865,7 @@
         "Name": "Kokiri Emerald",
         "Positions": {
           "x": 5,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -887,7 +894,7 @@
         "Name": "Goron Ruby",
         "Positions": {
           "x": 46,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -916,7 +923,7 @@
         "Name": "Zora Sapphire",
         "Positions": {
           "x": 87,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -1089,7 +1096,7 @@
         "Name": "Forest Medallion",
         "Positions": {
           "x": 132,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -1118,7 +1125,7 @@
         "Name": "Fire Medallion",
         "Positions": {
           "x": 175,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -1147,7 +1154,7 @@
         "Name": "Water Medallion",
         "Positions": {
           "x": 218,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -1176,7 +1183,7 @@
         "Name": "Shadow Medallion",
         "Positions": {
           "x": 261,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -1205,7 +1212,7 @@
         "Name": "Spirit Medallion",
         "Positions": {
           "x": 304,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 8,
@@ -1234,7 +1241,7 @@
         "Name": "Light Medallion",
         "Positions": {
           "x": 347,
-          "y": 215
+          "y": 235
         },
         "SheetInformation": {
           "row": 9,
@@ -1263,7 +1270,7 @@
         "Name": "Zelda Lullaby",
         "Positions": {
           "x": 176,
-          "y": 140
+          "y": 160
         },
         "SheetInformation": {
           "row": 5,
@@ -1285,7 +1292,7 @@
         "Name": "Epona Song",
         "Positions": {
           "x": 212,
-          "y": 140
+          "y": 160
         },
         "SheetInformation": {
           "row": 5,
@@ -1307,7 +1314,7 @@
         "Name": "Saria Song",
         "Positions": {
           "x": 248,
-          "y": 140
+          "y": 160
         },
         "SheetInformation": {
           "row": 5,
@@ -1329,7 +1336,7 @@
         "Name": "Sun Song",
         "Positions": {
           "x": 284,
-          "y": 140
+          "y": 160
         },
         "SheetInformation": {
           "row": 5,
@@ -1351,7 +1358,7 @@
         "Name": "Song of Time",
         "Positions": {
           "x": 323,
-          "y": 140
+          "y": 160
         },
         "SheetInformation": {
           "row": 5,
@@ -1373,7 +1380,7 @@
         "Name": "Song of Storms",
         "Positions": {
           "x": 354,
-          "y": 140
+          "y": 160
         },
         "SheetInformation": {
           "row": 5,
@@ -1395,7 +1402,7 @@
         "Name": "Minuet of Forest",
         "Positions": {
           "x": 176,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 4,
@@ -1417,7 +1424,7 @@
         "Name": "Bolero of Fire",
         "Positions": {
           "x": 212,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 4,
@@ -1439,7 +1446,7 @@
         "Name": "Serenade of Water",
         "Positions": {
           "x": 248,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 4,
@@ -1461,7 +1468,7 @@
         "Name": "Requiem of Spirit",
         "Positions": {
           "x": 320,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 4,
@@ -1483,7 +1490,7 @@
         "Name": "Nocturne of Shadow",
         "Positions": {
           "x": 284,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 4,
@@ -1505,7 +1512,7 @@
         "Name": "Prelude of Light",
         "Positions": {
           "x": 352,
-          "y": 175
+          "y": 195
         },
         "SheetInformation": {
           "row": 4,
@@ -1527,7 +1534,7 @@
         "Name": "Forest Key",
         "Positions": {
           "x": 7,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1547,7 +1554,7 @@
         "Name": "Fire Key",
         "Positions": {
           "x": 55,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1567,7 +1574,7 @@
         "Name": "Water Key",
         "Positions": {
           "x": 103,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1587,7 +1594,7 @@
         "Name": "Shadow Key",
         "Positions": {
           "x": 151,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1607,7 +1614,7 @@
         "Name": "Spirit Key",
         "Positions": {
           "x": 199,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1627,7 +1634,7 @@
         "Name": "Ganon Key",
         "Positions": {
           "x": 247,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1647,7 +1654,7 @@
         "Name": "Botw Key",
         "Positions": {
           "x": 295,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1667,7 +1674,7 @@
         "Name": "GTG Key",
         "Positions": {
           "x": 317,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 1,
@@ -1687,7 +1694,7 @@
         "Name": "Fortress Key",
         "Positions": {
           "x": 339,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1707,7 +1714,7 @@
         "Name": "CMG Key",
         "Positions": {
           "x": 361,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1727,7 +1734,7 @@
         "Name": "Forest BK",
         "Positions": {
           "x": 29,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1745,7 +1752,7 @@
         "Name": "Fire BK",
         "Positions": {
           "x": 77,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1763,7 +1770,7 @@
         "Name": "Water BK",
         "Positions": {
           "x": 125,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1781,7 +1788,7 @@
         "Name": "Shadow BK",
         "Positions": {
           "x": 173,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1799,7 +1806,7 @@
         "Name": "Spirit BK",
         "Positions": {
           "x": 221,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1817,7 +1824,7 @@
         "Name": "Ganon BK",
         "Positions": {
           "x": 269,
-          "y": 267
+          "y": 287
         },
         "SheetInformation": {
           "row": 2,
@@ -1835,7 +1842,7 @@
         "Name": "Triforce",
         "Positions": {
           "x": 124,
-          "y": 160
+          "y": 170
         },
         "SheetInformation": {
           "row": 3,
@@ -1848,6 +1855,91 @@
         "maxValue": 100,
         "maxValueAlternate": 100,
         "labelPosition": "right"
+      },
+      {
+        "Id": 143,
+        "Kind": "Item",
+        "Name": "Button-A",
+        "Positions": {
+          "x": 170,
+          "y": 115
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 1,
+          "SpriteSheet": "Small"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 144,
+        "Kind": "Item",
+        "Name": "C-Down",
+        "Positions": {
+          "x": 215,
+          "y": 115
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 2,
+          "SpriteSheet": "Small"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 145,
+        "Kind": "Item",
+        "Name": "C-Right",
+        "Positions": {
+          "x": 260,
+          "y": 115
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 3,
+          "SpriteSheet": "Small"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 146,
+        "Kind": "Item",
+        "Name": "C-Left",
+        "Positions": {
+          "x": 307,
+          "y": 115
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 4,
+          "SpriteSheet": "Small"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
+      },
+      {
+        "Id": 147,
+        "Kind": "Item",
+        "Name": "C-Up",
+        "Positions": {
+          "x": 350,
+          "y": 115
+        },
+        "SheetInformation": {
+          "row": 1,
+          "column": 5,
+          "SpriteSheet": "Small"
+        },
+        "isActive": false,
+        "Hint": null,
+        "OpacityDisable": 0.5
       }
     ]
   }
