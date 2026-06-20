@@ -21,7 +21,7 @@
     "@nuxt/ui": "^4.7.1",
     "@nuxtjs/color-mode": "^4.0.1",
     "@pinia/nuxt": "^0.11.3",
-    "nuxt": "^4.4.6",
+    "nuxt": "^4.4.8",
     "pinia": "^3.0.4",
     "socket.io": "^4.8.3",
     "socket.io-client": "^4.8.3",
