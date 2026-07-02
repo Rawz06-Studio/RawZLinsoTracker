@@ -14,16 +14,12 @@ jobs:
       publishable: false       # application, pas de publish npm
     secrets: inherit
 
-  sonar:
-    needs: release
-    uses: RawZ06-Studio/.github/.github/workflows/node-ci-sonar.yml@main
-    with:
-      node_version: '24'
-    secrets: inherit
-
   docker:
     needs: release
     uses: RawZ06-Studio/.github/.github/workflows/docker-build-push.yml@main
+    permissions:
+      contents: write   # Nécessaire pour les tags/releases
+      packages: write   # Nécessaire pour Docker/Maven/NPM
     with:
       image_name: tracker-online
       dokploy_app_id: Hf_pYEjZ17XZPpRh0fgAX
