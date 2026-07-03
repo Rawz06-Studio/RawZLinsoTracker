@@ -3,6 +3,8 @@ import { useDefaultFont } from "~/hooks/useCustomFont.js";
 const trackers = ["compact", "compactfr", "compactrsl", "compacttp"];
 const trackersInfo = ref({});
 const currentHover = ref("");
+const config = useRuntimeConfig();
+const version = config.public.version;
 
 const load = async (trackerName) => {
   return fetch("/sources/" + trackerName + "/tracker.json")
@@ -52,7 +54,7 @@ const handleOpenTracker = async (tracker) => {
       class="z-10 relative text-sm text-gray-100"
     >
       <p>Based on LinSoTracker 2.2 - Developed by LinSoraK</p>
-      <p>Web Version 2.0 - Developed by RawZ06</p>
+      <p>Web Version {{ version }} - Developed by RawZ06</p>
       <p class="text-red-500 font-bold">
         Only for Restream use, please use Linsotracker app for personal use
       </p>
