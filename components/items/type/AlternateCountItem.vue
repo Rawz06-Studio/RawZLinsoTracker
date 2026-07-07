@@ -155,7 +155,6 @@ const handleClickWheel = (event: MouseEvent) => {
         {{ stateStore.get(id).count }}
       </div>
     </template>
-    {{ alternateMax }}
     <div
       v-if="stateStore.get(id).mq"
       class="z-20 absolute top-[-5px] right-[0px] select-none text-shadow text-blue-500 text-xs"
