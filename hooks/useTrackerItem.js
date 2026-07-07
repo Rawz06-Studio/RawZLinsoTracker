@@ -89,8 +89,8 @@ export const useTrackerItem = (item) => {
   });
 
   const alternateMax = computed(() => {
-    return item.maxValueAlternate ?? 1;
-  })
+    return item.maxValueAlternate;
+  });
 
   const labelPosition = computed(() => {
     return item.labelPosition ?? "classic";

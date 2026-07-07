@@ -7,48 +7,53 @@ const props = defineProps<{
   item: any;
 }>();
 
-const { position, max, alternateMax, id, sheet, labelPosition } = useTrackerItem(props.item);
+const { position, max, alternateMax, id, sheet, labelPosition } =
+  useTrackerItem(props.item);
 const stateStore = useTrackerStateStore();
 stateStore.init(id.value, {
   count: 0,
-  mq: false
+  mq: false,
 });
 const update = (value: number, mq: boolean) => {
-  console.log("update", value, mq);
-  console.log("stateStore", stateStore.get(id.value));
   stateStore.update(id.value, {
     ...stateStore.get(id.value),
     count: value,
-    mq: mq
+    mq: mq,
   });
-  console.log("stateStore updated", stateStore.get(id.value));
 };
 const trackerStore = useTrackerStore();
 const itemSheetDimensions = trackerStore.itemSheetDimensions(sheet.value.name);
 
 const realMax = computed(() => {
-  if(alternateMax.value === undefined || alternateMax.value === null) return max.value;
+  if (alternateMax.value === undefined || alternateMax.value === null)
+    return max.value;
   return stateStore.get(id.value).mq ? alternateMax.value : max.value;
-})
+});
 
 const updateStateInc = () => {
-  update((stateStore.get(id.value).count + 1) % (realMax.value + 1), stateStore.get(id.value).mq);
+  update(
+    (stateStore.get(id.value).count + 1) % (realMax.value + 1),
+    stateStore.get(id.value).mq,
+  );
 };
 const updateStateDec = () => {
   update(
     stateStore.get(id.value).count === 0
       ? realMax.value
       : (stateStore.get(id.value).count - 1) % (realMax.value + 1),
-      stateStore.get(id.value).mq
+    stateStore.get(id.value).mq,
   );
 };
 
 const updateMqState = (mq: boolean) => {
-  if(alternateMax.value === undefined || alternateMax.value === null) return;
+  if (alternateMax.value === undefined || alternateMax.value === null) return;
   const nextRealMax = mq ? alternateMax.value : max.value;
-  const newCount = stateStore.get(id.value).count > nextRealMax ? nextRealMax : stateStore.get(id.value).count;
+  const newCount =
+    stateStore.get(id.value).count > nextRealMax
+      ? nextRealMax
+      : stateStore.get(id.value).count;
   update(newCount, mq);
-}
+};
 
 const handleWheel = (event: WheelEvent) => {
   if (event.deltaY < 0) {
@@ -60,12 +65,13 @@ const handleWheel = (event: WheelEvent) => {
 
 const handleClickWheel = (event: MouseEvent) => {
   event.preventDefault();
+  if (alternateMax.value === undefined || alternateMax.value === null) return;
   if (stateStore.get(id.value).mq) {
     updateMqState(false);
   } else {
     updateMqState(true);
   }
-}
+};
 </script>
 
 <template>
@@ -149,11 +155,14 @@ const handleClickWheel = (event: MouseEvent) => {
         {{ stateStore.get(id).count }}
       </div>
     </template>
+    {{ alternateMax }}
     <div
-        class="z-20 absolute top-[-5px] right-[0px] select-none text-shadow text-blue-500 text-xs"
-        :style="{ fontFamily: 'labelItemFont' }"
-        v-if="stateStore.get(id).mq"
-    >MQ</div>
+      v-if="stateStore.get(id).mq"
+      class="z-20 absolute top-[-5px] right-[0px] select-none text-shadow text-blue-500 text-xs"
+      :style="{ fontFamily: 'labelItemFont' }"
+    >
+      MQ
+    </div>
   </div>
 </template>
 
