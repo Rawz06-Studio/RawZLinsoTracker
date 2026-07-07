@@ -849,7 +849,6 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 100,
-        "maxValueAlternate": 100,
         "labelPosition": "right"
       },
       {
@@ -1538,7 +1537,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 5,
-        "maxValueAlternate": 5,
+        "maxValueAlternate": 6,
         "labelPosition": "right"
       },
       {
@@ -1558,7 +1557,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 8,
-        "maxValueAlternate": 8,
+        "maxValueAlternate": 5,
         "labelPosition": "right"
       },
       {
@@ -1578,7 +1577,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 6,
-        "maxValueAlternate": 6,
+        "maxValueAlternate": 2,
         "labelPosition": "right"
       },
       {
@@ -1598,7 +1597,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 5,
-        "maxValueAlternate": 5,
+        "maxValueAlternate": 6,
         "labelPosition": "right"
       },
       {
@@ -1618,7 +1617,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 5,
-        "maxValueAlternate": 5,
+        "maxValueAlternate": 7,
         "labelPosition": "right"
       },
       {
@@ -1638,7 +1637,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 2,
-        "maxValueAlternate": 2,
+        "maxValueAlternate": 3,
         "labelPosition": "right"
       },
       {
@@ -1658,7 +1657,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 3,
-        "maxValueAlternate": 3,
+        "maxValueAlternate": 2,
         "labelPosition": "right"
       },
       {
@@ -1678,7 +1677,7 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 9,
-        "maxValueAlternate": 9,
+        "maxValueAlternate": 3,
         "labelPosition": "right"
       },
       {
@@ -1698,7 +1697,6 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 4,
-        "maxValueAlternate": 4,
         "labelPosition": "right"
       },
       {
@@ -1718,7 +1716,6 @@
         "Hint": null,
         "OpacityDisable": 0.5,
         "maxValue": 6,
-        "maxValueAlternate": 5,
         "labelPosition": "right"
       },
       {

@@ -88,6 +88,10 @@ export const useTrackerItem = (item) => {
     return item.maxValue ?? 1;
   });
 
+  const alternateMax = computed(() => {
+    return item.maxValueAlternate ?? 1;
+  })
+
   const labelPosition = computed(() => {
     return item.labelPosition ?? "classic";
   });
@@ -111,6 +115,7 @@ export const useTrackerItem = (item) => {
     checkItem,
     glow,
     max,
+    alternateMax,
     id,
     labelPosition,
   };

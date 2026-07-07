@@ -268,7 +268,6 @@
         "OpacityDisable": 0.4,
         "LabelSize": 7,
         "maxValue": 3,
-        "maxValueAlternate": 3,
         "labelPosition": "right"
       },
       {
@@ -383,8 +382,7 @@
         "isActive": false,
         "Hint": null,
         "OpacityDisable": 0.4,
-        "maxValue": 6,
-        "maxValueAlternate": 6
+        "maxValue": 6
       },
       {
         "Id": 158,
@@ -403,8 +401,7 @@
         "Hint": null,
         "OpacityDisable": 0.4,
         "LabelSize": 7,
-        "maxValue": 60,
-        "maxValueAlternate": 60
+        "maxValue": 60
       },
       {
         "Id": 22,

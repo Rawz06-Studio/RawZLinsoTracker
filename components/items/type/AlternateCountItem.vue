@@ -7,33 +7,65 @@ const props = defineProps<{
   item: any;
 }>();
 
-const { position, max, id, sheet, labelPosition } = useTrackerItem(props.item);
+const { position, max, alternateMax, id, sheet, labelPosition } = useTrackerItem(props.item);
 const stateStore = useTrackerStateStore();
-stateStore.init(id.value, 0);
-const update = (value) => {
-  stateStore.update(id.value, value);
+stateStore.init(id.value, {
+  count: 0,
+  mq: false
+});
+const update = (value: number, mq: boolean) => {
+  console.log("update", value, mq);
+  console.log("stateStore", stateStore.get(id.value));
+  stateStore.update(id.value, {
+    ...stateStore.get(id.value),
+    count: value,
+    mq: mq
+  });
+  console.log("stateStore updated", stateStore.get(id.value));
 };
 const trackerStore = useTrackerStore();
 const itemSheetDimensions = trackerStore.itemSheetDimensions(sheet.value.name);
 
+const realMax = computed(() => {
+  if(alternateMax.value === undefined || alternateMax.value === null) return max.value;
+  return stateStore.get(id.value).mq ? alternateMax.value : max.value;
+})
+
 const updateStateInc = () => {
-  update((stateStore.get(id.value) + 1) % (max.value + 1));
+  update((stateStore.get(id.value).count + 1) % (realMax.value + 1), stateStore.get(id.value).mq);
 };
 const updateStateDec = () => {
   update(
-    stateStore.get(id.value) === 0
-      ? max.value
-      : (stateStore.get(id.value) - 1) % (max.value + 1),
+    stateStore.get(id.value).count === 0
+      ? realMax.value
+      : (stateStore.get(id.value).count - 1) % (realMax.value + 1),
+      stateStore.get(id.value).mq
   );
 };
 
-const handleWheel = (event) => {
+const updateMqState = (mq: boolean) => {
+  if(alternateMax.value === undefined || alternateMax.value === null) return;
+  const nextRealMax = mq ? alternateMax.value : max.value;
+  const newCount = stateStore.get(id.value).count > nextRealMax ? nextRealMax : stateStore.get(id.value).count;
+  update(newCount, mq);
+}
+
+const handleWheel = (event: WheelEvent) => {
   if (event.deltaY < 0) {
     updateStateDec();
   } else {
     updateStateInc();
   }
 };
+
+const handleClickWheel = (event: MouseEvent) => {
+  event.preventDefault();
+  if (stateStore.get(id.value).mq) {
+    updateMqState(false);
+  } else {
+    updateMqState(true);
+  }
+}
 </script>
 
 <template>
@@ -47,8 +79,9 @@ const handleWheel = (event) => {
     @click="updateStateInc()"
     @contextmenu.prevent="updateStateDec()"
     @wheel.prevent="handleWheel($event)"
+    @mousedown.middle="handleClickWheel($event)"
   >
-    <IconItem :item="item" :active="stateStore.get(id) > 0" />
+    <IconItem :item="item" :active="stateStore.get(id).count > 0" />
     <div
       v-if="labelPosition === 'left'"
       class="absolute flex items-end"
@@ -59,63 +92,68 @@ const handleWheel = (event) => {
       }"
     >
       <span
-        v-if="stateStore.get(id) > 0"
+        v-if="stateStore.get(id).count > 0"
         :style="{
           fontFamily: 'countItemFont',
           color:
-            stateStore.get(id) === max
+            stateStore.get(id).count === realMax
               ? 'var(--color-incrementalItemFont-max)'
               : 'var(--color-incrementalItemFont)',
           hidden:
-            stateStore.get(id) === 0
+            stateStore.get(id).count === 0
               ? 'var(--color-incrementalItemFont-max)'
               : 'var(--color-incrementalItemFont)',
         }"
         class="z-20 relative text-sm select-none text-shadow"
       >
         <span class="absolute -bottom-1.5 -left-1">
-          {{ stateStore.get(id) }}
+          {{ stateStore.get(id).count }}
         </span>
       </span>
     </div>
     <template v-else-if="labelPosition === 'right'">
       <div
-        v-if="stateStore.get(id) > 0"
+        v-if="stateStore.get(id).count > 0"
         :style="{
           fontFamily: 'countItemFont',
           color:
-            stateStore.get(id) === max
+            stateStore.get(id).count === realMax
               ? 'var(--color-incrementalItemFont-max)'
               : 'var(--color-incrementalItemFont)',
           hidden:
-            stateStore.get(id) === 0
+            stateStore.get(id).count === 0
               ? 'var(--color-incrementalItemFont-max)'
               : 'var(--color-incrementalItemFont)',
         }"
         class="z-20 absolute bottom-[-7px] left-[8px] align-middle inline-block text-center w-full text-sm select-none text-shadow"
       >
-        {{ stateStore.get(id) }}
+        {{ stateStore.get(id).count }}
       </div>
     </template>
     <template v-else>
       <div
-        v-if="stateStore.get(id) > 0"
+        v-if="stateStore.get(id).count > 0"
         :style="{
           fontFamily: 'countItemFont',
           color:
-            stateStore.get(id) === max
+            stateStore.get(id).count === realMax
               ? 'var(--color-incrementalItemFont-max)'
               : 'var(--color-incrementalItemFont)',
           hidden:
-            stateStore.get(id) === 0
+            stateStore.get(id).count === 0
               ? 'var(--color-incrementalItemFont-max)'
               : 'var(--color-incrementalItemFont)',
         }"
         class="z-20 absolute bottom-[-3px] right-[-10px] align-middle inline-block text-center w-full text-lg select-none text-shadow"
       >
-        {{ stateStore.get(id) }}
+        {{ stateStore.get(id).count }}
       </div>
     </template>
+    <div
+        class="z-20 absolute top-[-5px] right-[0px] select-none text-shadow text-blue-500 text-xs"
+        :style="{ fontFamily: 'labelItemFont' }"
+        v-if="stateStore.get(id).mq"
+    >MQ</div>
   </div>
 </template>
 
