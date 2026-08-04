@@ -13,21 +13,21 @@ export default defineNitroPlugin((nitroApp) => {
   io.bind(engine);
 
   io.on("connection", (socket: Socket) => {
-    console.debug("New connection :", socket.id);
-
     socket.on("joinGroup", (args: { id: string; name: string }) => {
-      console.debug(
-        `Client ${socket.id} a join group ${args.id.toLocaleLowerCase()}`,
-      );
-      socket.join(args.id.toLocaleLowerCase());
+      const groupId = args.id.toLocaleLowerCase();
+      socket.join(groupId);
 
-      if (globalState.get(args.id.toLocaleLowerCase())) {
-        const name = globalState.getName(args.id.toLocaleLowerCase());
+      if (globalState.get(groupId) !== undefined) {
+        const name = globalState.getName(groupId);
+        globalState.touchActivity(groupId);
+        console.info(
+          `[socket] User ${socket.id} connected to tracker "${groupId}"`,
+        );
         if (args.name === name) {
           socket.emit("tracker", {
-            id: args.id.toLocaleLowerCase(),
+            id: groupId,
             name,
-            tracker: globalState.get(args.id.toLocaleLowerCase()),
+            tracker: globalState.get(groupId),
           });
         } else {
           socket.emit("name-error", name);
@@ -35,19 +35,27 @@ export default defineNitroPlugin((nitroApp) => {
       } else {
         try {
           const name = args.name;
-          globalState.set(args.id.toLocaleLowerCase(), null, null);
+          globalState.set(groupId, null, null);
+          console.info(`[socket] New tracker created: "${groupId}"`);
+          console.info(
+            `[socket] User ${socket.id} connected to tracker "${groupId}"`,
+          );
           socket.emit("tracker", {
-            id: args.id.toLocaleLowerCase(),
+            id: groupId,
             name,
-            tracker: globalState.get(args.id.toLocaleLowerCase()),
+            tracker: globalState.get(groupId),
           });
           setTimeout(
             () => {
-              globalState.delete(args.id.toLocaleLowerCase());
+              globalState.delete(groupId);
             },
             HOUR_AVAILABLE * 60 * 60 * 1000,
           );
         } catch (e) {
+          console.error(
+            `[socket] Error creating tracker "${groupId}":`,
+            (e as Error).message,
+          );
           socket.emit("error", e);
         }
       }
@@ -56,23 +64,32 @@ export default defineNitroPlugin((nitroApp) => {
     socket.on("tracker", (data: { id: string; name: string; tracker: any }) => {
       const { id, tracker, name } = data;
       if (!id) {
-        console.error("ID is missing");
+        console.error("[socket] Tracker update received without ID");
         return;
       }
 
       try {
         globalState.set(id, name, tracker);
-        console.debug(`update tracker for the group ${id}:`, tracker);
+        console.info(`[socket] Tracker "${id}" updated by user ${socket.id}`);
 
-        // Diffuser la mise à jour à tous les membres du groupe
         io.to(id).emit("tracker", { id, tracker });
       } catch (e) {
+        console.error(
+          `[socket] Error updating tracker "${id}":`,
+          (e as Error).message,
+        );
         socket.emit("error", e);
       }
     });
 
     socket.on("disconnect", (reason) => {
-      console.debug(`Disconnection of client ${socket.id} :`, reason);
+      const rooms = [...socket.rooms].filter((r) => r !== socket.id);
+      for (const groupId of rooms) {
+        globalState.touchActivity(groupId);
+      }
+      console.info(
+        `[socket] User ${socket.id} disconnected (reason: ${reason})`,
+      );
     });
   });
 
@@ -84,4 +101,7 @@ export default defineNitroPlugin((nitroApp) => {
       event._handled = true;
     }),
   );
+
+  // Expose the io instance for use in API handlers
+  (nitroApp as any)._io = io;
 });
