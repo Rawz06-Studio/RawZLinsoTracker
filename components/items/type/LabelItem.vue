@@ -25,48 +25,52 @@ stateStore.init(id.value, {
   state: defaultLabel.value ?? 0,
   active: defaultActive.value,
 });
+const currentState = computed(() => stateStore.get(id.value));
 
 const updateStateInc = () => {
+  const state = currentState.value;
+  if (!state) return;
   if (hasDefaultLabel.value) {
-    if (stateStore.get(id.value)?.state + 1 < labels.value.length) {
+    if (state.state + 1 < labels.value.length) {
       stateStore.update(id.value, {
-        ...stateStore.get(id.value),
-        state: stateStore.get(id.value).state + 1,
+        ...state,
+        state: state.state + 1,
       });
     }
   } else {
     stateStore.update(id.value, {
-      ...stateStore.get(id.value),
-      state: (stateStore.get(id.value).state + 1) % labels.value.length,
+      ...state,
+      state: (state.state + 1) % labels.value.length,
     });
   }
 };
 const updateStateDec = () => {
+  const state = currentState.value;
+  if (!state) return;
   if (hasDefaultLabel.value) {
-    if (stateStore.get(id.value).state - 1 >= 0) {
+    if (state.state - 1 >= 0) {
       stateStore.update(id.value, {
-        ...stateStore.get(id.value),
-        state: stateStore.get(id.value).state - 1,
+        ...state,
+        state: state.state - 1,
       });
     }
   } else {
     stateStore.update(id.value, {
-      ...stateStore.get(id.value),
-      state:
-        stateStore.get(id.value).state - 1 < 0
-          ? labels.value.length - 1
-          : stateStore.get(id.value).state - 1,
+      ...state,
+      state: state.state - 1 < 0 ? labels.value.length - 1 : state.state - 1,
     });
   }
 };
 const updateActive = () => {
+  const state = currentState.value;
+  if (!state) return;
   stateStore.update(id.value, {
-    ...stateStore.get(id.value),
-    active: !stateStore.get(id.value).active,
+    ...state,
+    active: !state.active,
   });
 };
 const currentLabel = computed(() => {
-  return labels.value[stateStore.get(id.value).state];
+  return labels.value[currentState.value?.state ?? defaultLabel.value ?? 0];
 });
 const handleWheel = (event) => {
   if (event.deltaY < 0) {
@@ -84,7 +88,7 @@ const handleRightClick = () => {
 
 <template>
   <div
-    v-if="stateStore.get(id) !== undefined && stateStore.get(id) !== null"
+    v-if="currentState"
     class="absolute z-10"
     :style="{
       left: position.x + 'px',
@@ -94,7 +98,7 @@ const handleRightClick = () => {
     @contextmenu.prevent="handleRightClick()"
     @wheel.prevent="handleWheel($event)"
   >
-    <IconItem :item="item" :active="stateStore.get(id).active" />
+    <IconItem :item="item" :active="currentState.active" />
     <div
       :style="{
         fontFamily: 'labelItemFont',
