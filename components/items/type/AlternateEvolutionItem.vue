@@ -18,31 +18,37 @@ stateStore.init(id.value, {
   state: 0,
   active: defaultActive.value,
 });
+const currentState = computed(() => stateStore.get(id.value));
 const changeActive = () => {
+  const state = currentState.value;
+  if (!state) return;
   stateStore.update(id.value, {
-    ...stateStore.get(id.value),
-    active: !stateStore.get(id.value).active,
+    ...state,
+    active: !state.active,
   });
 };
 const updateStateInc = () => {
+  const state = currentState.value;
+  if (!state || max.value <= 0) return;
   stateStore.update(id.value, {
-    ...stateStore.get(id.value),
-    state: (stateStore.get(id.value).state + 1) % max.value,
+    ...state,
+    state: (state.state + 1) % max.value,
   });
 };
 
 const currentItem = computed(() => {
-  if (!stateStore.get(id.value) || stateStore.get(id.value)?.state < 1) {
+  const state = currentState.value;
+  if (!state || state.state < 1) {
     return props.item;
   } else {
-    return next.value[stateStore.get(id.value).state - 1];
+    return next.value[state.state - 1] ?? props.item;
   }
 });
 </script>
 
 <template>
   <div
-    v-if="stateStore.get(id) !== undefined && stateStore.get(id) !== null"
+    v-if="currentState"
     class="absolute z-10"
     :style="{
       left: position.x + 'px',
@@ -53,8 +59,8 @@ const currentItem = computed(() => {
   >
     <IconItem
       :item="currentItem"
-      :active="stateStore.get(id).active"
-      :is-max-label="stateStore.get(id).state === max - 1"
+      :active="currentState.active"
+      :is-max-label="currentState.state === max - 1"
     />
     <div
       :style="{
