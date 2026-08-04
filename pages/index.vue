@@ -13,27 +13,23 @@ const config = useRuntimeConfig();
 const version = config.public.version;
 
 const load = async (trackerName) => {
-  return fetch("/sources/" + trackerName + "/tracker.json")
-    .then(async (res) => {
-      try {
-        return await res.json();
-      } catch {
-        return null;
-      }
-    })
-    .catch(() => null);
+  try {
+    return await $fetch("/sources/" + trackerName + "/tracker.json");
+  } catch {
+    return null;
+  }
 };
 
 trackers.forEach((tracker) => {
-  load(tracker).then(
-    (info) =>
-      (trackersInfo.value[tracker] = {
-        name: info[0].Informations.Name,
-        creator: info[0].Informations.Creator,
-        version: info[0].Informations.Version,
-        description: info[0].Informations.Comments,
-      }),
-  );
+  load(tracker).then((info) => {
+    if (!info) return;
+    trackersInfo.value[tracker] = {
+      name: info[0].Informations.Name,
+      creator: info[0].Informations.Creator,
+      version: info[0].Informations.Version,
+      description: info[0].Informations.Comments,
+    };
+  });
 });
 
 useDefaultFont();

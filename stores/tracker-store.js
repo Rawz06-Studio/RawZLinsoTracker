@@ -9,19 +9,15 @@ export const useTrackerStore = defineStore("tracker", {
   actions: {
     async load(trackerName) {
       if (trackerName.endsWith("disabled")) {
-        return new Promise((_, reject) => reject(false));
+        return false;
       }
-      return fetch("/sources/" + trackerName + "/tracker.json")
-        .then(async (res) => {
-          try {
-            this.data = await res.json();
-            this.trackerName = trackerName;
-            return true;
-          } catch {
-            return false;
-          }
-        })
-        .catch(() => false);
+      try {
+        this.data = await $fetch("/sources/" + trackerName + "/tracker.json");
+        this.trackerName = trackerName;
+        return true;
+      } catch {
+        return false;
+      }
     },
 
     dimensions() {
