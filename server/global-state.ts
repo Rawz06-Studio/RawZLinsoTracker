@@ -1,20 +1,27 @@
+export interface TrackerMeta {
+  createdAt: Date;
+  lastActivityAt: Date;
+}
+
 class GlobalState {
   private _groupTrackers: Record<string, any> = {};
-  private _creatingDate: Record<string, Date> = {};
+  private _trackerMeta: Record<string, TrackerMeta> = {};
   private _nameTrackers: Record<string, string | null> = {};
 
   private static NUMBER_MAX = 1000 as const;
 
   set(groupId: string, name: string | null, tracker: any) {
-    if (this._groupTrackers[groupId]) {
+    const now = new Date();
+    if (this._groupTrackers[groupId] !== undefined) {
       this._groupTrackers[groupId] = tracker;
       this._nameTrackers[groupId] = name;
+      this._trackerMeta[groupId].lastActivityAt = now;
     } else if (
       Object.keys(this._groupTrackers).length <= GlobalState.NUMBER_MAX
     ) {
       this._groupTrackers[groupId] = tracker;
       this._nameTrackers[groupId] = name;
-      this._creatingDate[groupId] = new Date();
+      this._trackerMeta[groupId] = { createdAt: now, lastActivityAt: now };
     } else {
       throw new Error(`Exceed number of tracker`);
     }
@@ -28,13 +35,24 @@ class GlobalState {
     return this._nameTrackers[groupId];
   }
 
-  delete(groupId: string): any {
-    delete this._groupTrackers[groupId];
-    delete this._creatingDate[groupId];
+  getMeta(groupId: string): TrackerMeta | undefined {
+    return this._trackerMeta[groupId];
   }
 
-  list() {
-    return this._creatingDate;
+  touchActivity(groupId: string) {
+    if (this._trackerMeta[groupId]) {
+      this._trackerMeta[groupId].lastActivityAt = new Date();
+    }
+  }
+
+  delete(groupId: string): any {
+    delete this._groupTrackers[groupId];
+    delete this._trackerMeta[groupId];
+    delete this._nameTrackers[groupId];
+  }
+
+  list(): Record<string, TrackerMeta> {
+    return this._trackerMeta;
   }
 
   names() {
