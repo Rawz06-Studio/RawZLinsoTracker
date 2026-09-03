@@ -3,8 +3,8 @@
     "Informations": {
       "Creator": "ZorroDisco",
       "Name": "Twilight Princess - Compact",
-      "Version": "1.2",
-      "Comments": "Tracker for TP tournaments restream"
+      "Version": "1.1",
+      "Comments": "Tracker for Drehen tournament restream"
     }
   },
   {
@@ -13,7 +13,7 @@
         "width": 330,
         "height": 220
       },
-      "Background": "background_tpV2.png",
+      "Background": "background_tp.png",
       "BackgroundColor": {
         "r": 0,
         "g": 0,
@@ -21,7 +21,7 @@
       },
       "Items": {
         "Normal": {
-          "ItemsSheet": "item_tpV2.png",
+          "ItemsSheet": "item_tp.png",
           "ItemsSheetDimensions": {
             "width": 45,
             "height": 45
@@ -405,20 +405,22 @@
       },
       {
         "Id": 22,
-        "Kind": "Item",
-        "Name": "Invoice",
+        "Kind": "AlternateCountItem",
+        "Name": "Hidden Skills",
         "Positions": {
           "x": 35,
           "y": 135
         },
         "SheetInformation": {
-          "row": 5,
-          "column": 3,
+          "row": 6,
+          "column": 2,
           "SpriteSheet": "Normal"
         },
         "isActive": false,
         "Hint": null,
-        "OpacityDisable": 0.4
+        "OpacityDisable": 0.4,
+        "maxValue": 7,
+        "maxValueAlternate": 7
       },
       {
         "Id": 27,
@@ -426,7 +428,7 @@
         "Name": "Wooden Sword",
         "Positions": {
           "x": 5,
-          "y": 15
+          "y": 10
         },
         "SheetInformation": {
           "row": 1,
@@ -477,7 +479,7 @@
         "Name": "Zora Armor",
         "Positions": {
           "x": 5,
-          "y": 70
+          "y": 65
         },
         "SheetInformation": {
           "row": 1,
@@ -494,7 +496,7 @@
         "Name": "Magic Armor",
         "Positions": {
           "x": 47,
-          "y": 70
+          "y": 65
         },
         "SheetInformation": {
           "row": 1,
@@ -511,7 +513,7 @@
         "Name": "Ordon Shield",
         "Positions": {
           "x": 47,
-          "y": 15
+          "y": 10
         },
         "SheetInformation": {
           "row": 1,
@@ -538,34 +540,20 @@
       },
       {
         "Id": 60,
-        "Kind": "EvolutionItem",
-        "Name": "Wallet",
+        "Kind": "Item",
+        "Name": "Shard",
         "Positions": {
           "x": 0,
           "y": 135
         },
         "SheetInformation": {
-          "row": 5,
+          "row": 6,
           "column": 1,
           "SpriteSheet": "Normal"
         },
         "isActive": false,
         "Hint": null,
-        "OpacityDisable": 0.4,
-        "Label": null,
-        "LabelCenter": false,
-        "NextItems": [
-          {
-            "Id": 0,
-            "Name": "Big Wallet",
-            "SheetInformation": {
-              "row": 5,
-              "column": 2,
-              "SpriteSheet": "Normal"
-            },
-            "Label": null
-          }
-        ]
+        "OpacityDisable": 0.4
       },
       {
         "Id": 50,
@@ -610,14 +598,14 @@
       {
         "Id": 55,
         "Kind": "Item",
-        "Name": "Desert Key",
+        "Name": "Coro Key",
         "Positions": {
           "x": 0,
           "y": 178
         },
         "SheetInformation": {
           "row": 7,
-          "column": 6,
+          "column": 1,
           "SpriteSheet": "Normal"
         },
         "isActive": false,
@@ -627,14 +615,14 @@
       {
         "Id": 56,
         "Kind": "LabelItem",
-        "Name": "Shadow 1",
+        "Name": "Shard 1",
         "Positions": {
-          "x": 145,
-          "y": 150
+          "x": 125,
+          "y": 160
         },
         "SheetInformation": {
-          "row": 5,
-          "column": 4,
+          "row": 8,
+          "column": 1,
           "SpriteSheet": "Normal"
         },
         "isActive": false,
@@ -657,14 +645,14 @@
       {
         "Id": 57,
         "Kind": "LabelItem",
-        "Name": "Shadow 2",
+        "Name": "Shard 2",
         "Positions": {
-          "x": 200,
-          "y": 150
+          "x": 175,
+          "y": 160
         },
         "SheetInformation": {
-          "row": 5,
-          "column": 5,
+          "row": 8,
+          "column": 2,
           "SpriteSheet": "Normal"
         },
         "isActive": false,
@@ -687,19 +675,49 @@
       {
         "Id": 58,
         "Kind": "LabelItem",
-        "Name": "Shadow 3",
+        "Name": "Shard 3",
         "Positions": {
-          "x": 255,
-          "y": 150
+          "x": 225,
+          "y": 160
         },
         "SheetInformation": {
-          "row": 5,
-          "column": 6,
+          "row": 8,
+          "column": 3,
           "SpriteSheet": "Normal"
         },
         "isActive": false,
         "Hint": "",
         "OpacityDisable": 0.5,
+        "OffsetLabel": 3,
+        "LabelSize": 13,
+        "LabelList": [
+          "????",
+          "FRST",
+          "MINE",
+          "LAKE",
+          "AG",
+          "RUINS",
+          "TOT",
+          "SKY",
+          "TWLT"
+        ]
+      },
+      {
+        "Id": 59,
+        "Kind": "LabelItem",
+        "Name": "Shard 4",
+        "Positions": {
+          "x": 275,
+          "y": 160
+        },
+        "SheetInformation": {
+          "row": 8,
+          "column": 4,
+          "SpriteSheet": "Normal"
+        },
+        "isActive": false,
+        "Hint": "",
+        "OpacityDisable": 0.35,
         "OffsetLabel": 3,
         "LabelSize": 13,
         "LabelList": [
