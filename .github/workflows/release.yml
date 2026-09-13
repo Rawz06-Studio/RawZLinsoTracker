@@ -22,5 +22,5 @@ jobs:
       packages: write   # Nécessaire pour Docker/Maven/NPM
     with:
       image_name: tracker-online
-      dokploy_app_id: Hf_pYEjZ17XZPpRh0fgAX
+      dokploy_app_id: DAFJc1pvrQywbMyD7eDZa
     secrets: inherit
