@@ -23,7 +23,7 @@
     "@pinia/nuxt": "^1.0.1",
     "nuxt": "^4.5.2",
     "pinia": "^4.0.2",
-    "socket.io": "^4.8.3",
+    "socket.io": "^4.8.4",
     "socket.io-client": "^4.8.3",
     "vue": "^3.5.41"
   },
