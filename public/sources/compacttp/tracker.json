@@ -26,6 +26,13 @@
             "width": 45,
             "height": 45
           }
+        },
+        "Others": {
+          "ItemsSheet": "items.png",
+          "ItemsSheetDimensions": {
+            "width": 35,
+            "height": 35
+          }
         }
       }
     }
@@ -405,16 +412,16 @@
       },
       {
         "Id": 22,
-        "Kind": "AlternateCountItem",
-        "Name": "Hidden Skills",
+        "Kind": "Item",
+        "Name": "Wooden Statue",
         "Positions": {
           "x": 35,
           "y": 135
         },
         "SheetInformation": {
-          "row": 6,
-          "column": 2,
-          "SpriteSheet": "Normal"
+          "row": 2,
+          "column": 9,
+          "SpriteSheet": "Others"
         },
         "isActive": false,
         "Hint": null,
@@ -540,20 +547,34 @@
       },
       {
         "Id": 60,
-        "Kind": "Item",
-        "Name": "Shard",
+        "Kind": "EvolutionItem",
+        "Name": "Wallet",
         "Positions": {
           "x": 0,
           "y": 135
         },
         "SheetInformation": {
-          "row": 6,
+          "row": 7,
           "column": 1,
-          "SpriteSheet": "Normal"
+          "SpriteSheet": "Others"
         },
         "isActive": false,
         "Hint": null,
-        "OpacityDisable": 0.4
+        "OpacityDisable": 0.4,
+        "Label": null,
+        "LabelCenter": false,
+        "NextItems": [
+          {
+            "Id": 0,
+            "Name": "Big Wallet",
+            "SheetInformation": {
+              "row": 7,
+              "column": 2,
+              "SpriteSheet": "Others"
+            },
+            "Label": null
+          }
+        ]
       },
       {
         "Id": 50,
